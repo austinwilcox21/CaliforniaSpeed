@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Juan\.Rider2019.1\config\scratches" t="IncludeRecursive" />
-    <e p="C:\Users\Juan\.Rider2019.1\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Juan\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_TestWebSocketApplication.462326607.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Juan\Documents\GitHub\California" t="IncludeFlat">
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="TestWebSocketApplication" t="IncludeRecursive">
         <e p="app.config" t="Include" />
@@ -52,6 +49,62 @@
             <e p="site.css" t="Include" />
           </e>
           <e p="favicon.ico" t="Include" />
+          <e p="images" t="Include">
+            <e p="10C.png" t="Include" />
+            <e p="10D.png" t="Include" />
+            <e p="10H.png" t="Include" />
+            <e p="10S.png" t="Include" />
+            <e p="2C.png" t="Include" />
+            <e p="2D.png" t="Include" />
+            <e p="2H.png" t="Include" />
+            <e p="2S.png" t="Include" />
+            <e p="3C.png" t="Include" />
+            <e p="3D.png" t="Include" />
+            <e p="3H.png" t="Include" />
+            <e p="3S.png" t="Include" />
+            <e p="4C.png" t="Include" />
+            <e p="4D.png" t="Include" />
+            <e p="4H.png" t="Include" />
+            <e p="4S.png" t="Include" />
+            <e p="5C.png" t="Include" />
+            <e p="5D.png" t="Include" />
+            <e p="5H.png" t="Include" />
+            <e p="5S.png" t="Include" />
+            <e p="6C.png" t="Include" />
+            <e p="6D.png" t="Include" />
+            <e p="6H.png" t="Include" />
+            <e p="6S.png" t="Include" />
+            <e p="7C.png" t="Include" />
+            <e p="7D.png" t="Include" />
+            <e p="7H.png" t="Include" />
+            <e p="7S.png" t="Include" />
+            <e p="8C.png" t="Include" />
+            <e p="8D.png" t="Include" />
+            <e p="8H.png" t="Include" />
+            <e p="8S.png" t="Include" />
+            <e p="9C.png" t="Include" />
+            <e p="9D.png" t="Include" />
+            <e p="9H.png" t="Include" />
+            <e p="9S.png" t="Include" />
+            <e p="AC.png" t="Include" />
+            <e p="AD.png" t="Include" />
+            <e p="AH.png" t="Include" />
+            <e p="AS.png" t="Include" />
+            <e p="background.jpg" t="Include" />
+            <e p="blue_back.png" t="Include" />
+            <e p="JC.png" t="Include" />
+            <e p="JD.png" t="Include" />
+            <e p="JH.png" t="Include" />
+            <e p="JS.png" t="Include" />
+            <e p="KC.png" t="Include" />
+            <e p="KD.png" t="Include" />
+            <e p="KH.png" t="Include" />
+            <e p="KS.png" t="Include" />
+            <e p="QC.png" t="Include" />
+            <e p="QD.png" t="Include" />
+            <e p="QH.png" t="Include" />
+            <e p="QS.png" t="Include" />
+          </e>
           <e p="js" t="Include">
             <e p="signalr.js" t="Include" />
             <e p="site.js" t="Include" />
@@ -113,5 +166,7 @@
       </e>
       <e p="TestWebSocketApplication.sln" t="IncludeFlat" />
     </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_TestWebSocketApplication.1848683497.00" t="ExcludeRecursive" />
   </component>
 </project>

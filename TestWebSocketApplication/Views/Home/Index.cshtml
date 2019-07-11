@@ -20,8 +20,70 @@
             
         </ul>
     </div>
-
-
-
 </div>
+
+@* Game Area Rows *@
+<div class="container h-100" style="background-image: url(../images/background.jpg); background-position: center; padding-top: 100px; padding-bottom: 100px; border-style: solid; border-width: 5px; border-color: black; border-radius: 25px;">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2"></div>
+        
+        <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2">
+            <div id="position1" class="border: none" style="width: 100px;" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id ="pos1" class="card-img-top" src="~/images/10C.png" alt="playing_card" ondragstart="drag(event)">
+            </div>
+        </div>
+        
+        <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2">
+            <div id="position2" style="width: 100px; border: none;" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="pos2" class="card-img-top" src="~/images/10H.png" alt="playing_card" ondragstart="drag(event)">
+            </div>
+        </div>
+        
+        <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2">
+            <div id="position3" style="width: 100px; border: none;" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="pos3" class="card-img-top" src="~/images/7S.png" alt="playing_card" ondragstart="drag(event)">
+            </div>
+        </div>
+        
+        <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="position4" style="width: 100px; border: none;">
+                <img id="pos4" class="card-img-top" src="~/images/2H.png" alt="playing_card" ondragstart="drag(event)">
+            </div>
+        </div>
+        
+        <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2"></div>
+    </div>
+    
+    <div class="row h-100 justify-content-center align-items-center" style="margin-top: 175px; margin-bottom: 175px;">
+        
+        <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2"></div>
+        
+        <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2">
+            <div id="position5" style="width: 100px; border: none;" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="pos5" class="card-img-top" src="~/images/3S.png" alt="playing_card" ondragstart="drag(event)">
+            </div>
+        </div>
+        
+        <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2">
+            <div id="position6" style="width: 100px; border: none;" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id="pos6" class="card-img-top" src="~/images/10S.png" alt="playing_card" ondragstart="drag(event)">
+            </div>
+        </div>
+        
+        <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="position7" style="width: 100px; border: none;">
+                <img id="pos7" class="card-img-top" src="~/images/8C.png" alt="playing_card" ondragstart="drag(event)">
+            </div>
+        </div>
+        
+        <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="position8" style="width: 100px; border: none;">
+                <img id="pos8" class="card-img-top" src="~/images/2C.png" alt="playing_card" ondragstart="drag(event)">
+            </div>
+        </div>
+        
+        <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2"></div>
+    </div>
+</div>
+
 <script src="~/js/signalr.js"></script>

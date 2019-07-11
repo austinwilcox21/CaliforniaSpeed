@@ -2,7 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1cfde34-17cc-4998-aecc-810e58237d7f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/Deck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/Deck.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/10C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/10D.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/10H.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/10S.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/2C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/2D.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/2H.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/2S.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/3C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/3D.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/3H.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/3S.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/4C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/4D.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/4H.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/4S.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/5C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/5D.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/5H.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/5S.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/6C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/6D.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/6H.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/6S.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/7C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/7D.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/7H.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/7S.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/8C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/8D.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/8H.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/8S.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/9C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/9D.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/9H.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/9S.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/AC.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/AD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/AH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/AS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/JC.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/JD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/JH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/JS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/KC.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/KD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/KH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/KS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/QC.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/QD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/QH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/QS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/blue_back.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestWebSocketApplication/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestWebSocketApplication/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestWebSocketApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestWebSocketApplication/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/TestWebSocketApplication.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/TestWebSocketApplication.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/TestWebSocketApplication.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/TestWebSocketApplication.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/TestWebSocketApplication.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/TestWebSocketApplication.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/js/site.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,96 +77,53 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Program.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-              <folding>
-                <marker date="1562551801383" expanded="false" signature="6:255" ph="..." />
-                <marker date="1562551801383" expanded="true" signature="291:618" ph="{...}" />
-                <marker date="1562551801383" expanded="true" signature="318:616" ph="{...}" />
-                <marker date="1562551801383" expanded="true" signature="371:445" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/2D.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Views/Home/Index.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <marker date="1562551801388" expanded="true" signature="0:41" ph="@..." />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/JS.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/KC.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/KD.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/KH.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/KS.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/QC.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/QD.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/QH.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Deck.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-              <folding>
-                <marker date="1562837952458" expanded="true" signature="6:64" ph="..." />
-                <marker date="1562837952458" expanded="true" signature="100:1414" ph="{...}" />
-                <marker date="1562837952458" expanded="true" signature="124:1412" ph="{...}" />
-                <marker date="1562837952458" expanded="true" signature="296:1081" ph="{...}" />
-                <marker date="1562837952458" expanded="true" signature="348:477" ph="{...}" />
-                <marker date="1562837952458" expanded="true" signature="603:675" ph="/* String value = faces[52 % 11]; ... */" />
-                <marker date="1562837952458" expanded="true" signature="739:1048" ph="{...}" />
-                <marker date="1562837952458" expanded="true" signature="784:894" ph="{...}" />
-                <marker date="1562837952458" expanded="true" signature="915:1030" ph="{...}" />
-                <marker date="1562837952458" expanded="true" signature="1111:1406" ph="{...}" />
-                <marker date="1562837952458" expanded="true" signature="1183:1396" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Card.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-              <folding>
-                <marker date="1562717475237" expanded="true" signature="6:30" ph="..." />
-                <marker date="1562717475237" expanded="true" signature="66:340" ph="{...}" />
-                <marker date="1562717475237" expanded="true" signature="90:338" ph="{...}" />
-                <marker date="1562717475237" expanded="true" signature="241:331" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Startup.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-              <folding>
-                <marker date="1562551801386" expanded="false" signature="6:363" ph="..." />
-                <marker date="1562551801386" expanded="true" signature="399:2260" ph="{...}" />
-                <marker date="1562551801386" expanded="true" signature="426:2258" ph="{...}" />
-                <marker date="1562551801386" expanded="true" signature="485:548" ph="{...}" />
-                <marker date="1562551801386" expanded="true" signature="771:1259" ph="{...}" />
-                <marker date="1562551801386" expanded="true" signature="857:1121" ph="{...}" />
-                <marker date="1562551801386" expanded="true" signature="1447:2252" ph="{...}" />
-                <marker date="1562551801386" expanded="true" signature="1494:1571" ph="{...}" />
-                <marker date="1562551801386" expanded="true" signature="1588:1847" ph="{...}" />
-                <marker date="1562551801386" expanded="true" signature="2003:2161" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files/dotnet/sdk/2.2.107/Microsoft.Common.CurrentVersion.targets">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63030">
-              <caret line="4202" column="26" selection-start-line="4202" selection-start-column="26" selection-end-line="4202" selection-end-column="26" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/QS.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -111,11 +132,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/TestWebSocketApplication/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TestWebSocketApplication/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestWebSocketApplication/Deck.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestWebSocketApplication/Card.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TestWebSocketApplication/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestWebSocketApplication/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TestWebSocketApplication/Startup.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -123,13 +144,14 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/Deck.cs" />
         <option value="$PROJECT_DIR$/TestWebSocketApplication/Card.cs" />
         <option value="$PROJECT_DIR$/TestWebSocketApplication/Deck.cs" />
+        <option value="$PROJECT_DIR$/TestWebSocketApplication/Views/Home/Index.cshtml" />
+        <option value="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/js/site.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -138,8 +160,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
       <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -151,6 +173,32 @@
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
               <item name="TestWebSocketApplication" type="24d0babc:SolutionExplorerModelNode" />
               <item name="TestWebSocketApplication" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="TestWebSocketApplication" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="TestWebSocketApplication" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="TestWebSocketApplication" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="TestWebSocketApplication" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Home" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="TestWebSocketApplication" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="TestWebSocketApplication" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="TestWebSocketApplication" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="TestWebSocketApplication" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="images" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -227,11 +275,12 @@
       <workItem from="1562714955234" duration="4853000" />
       <workItem from="1562725906243" duration="813000" />
       <workItem from="1562837142650" duration="1379000" />
+      <workItem from="1562813933315" duration="231000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13434000" />
+    <option name="totallyTimeSpent" value="13665000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -243,9 +292,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27437642" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2786753" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -289,87 +338,222 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/Deck.cs" />
     <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
+        <state relative-caret-position="48">
           <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding>
-            <marker date="1562551801383" expanded="false" signature="6:255" ph="..." />
-            <marker date="1562551801383" expanded="true" signature="291:618" ph="{...}" />
-            <marker date="1562551801383" expanded="true" signature="318:616" ph="{...}" />
-            <marker date="1562551801383" expanded="true" signature="371:445" ph="{...}" />
+            <marker date="1562813415000" expanded="false" signature="6:255" ph="..." />
+            <marker date="1562813415000" expanded="true" signature="291:618" ph="{...}" />
+            <marker date="1562813415000" expanded="true" signature="318:616" ph="{...}" />
+            <marker date="1562813415000" expanded="true" signature="371:445" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Views/Home/Index.cshtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="977">
+          <caret line="86" column="6" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
           <folding>
-            <marker date="1562551801388" expanded="true" signature="0:41" ph="@..." />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <marker date="1562814099000" expanded="true" signature="0:41" ph="@..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/css/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-64" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/js/site.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="22" column="92" selection-start-line="22" selection-start-column="92" selection-end-line="22" selection-end-column="92" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/background.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/2C.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Deck.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Card.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <marker date="1562813415000" expanded="false" signature="6:30" ph="..." />
+            <marker date="1562813415000" expanded="true" signature="66:340" ph="{...}" />
+            <marker date="1562813415000" expanded="true" signature="90:338" ph="{...}" />
+            <marker date="1562813415000" expanded="true" signature="241:331" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
+        <state relative-caret-position="48">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
-            <marker date="1562551801386" expanded="false" signature="6:363" ph="..." />
-            <marker date="1562551801386" expanded="true" signature="399:2260" ph="{...}" />
-            <marker date="1562551801386" expanded="true" signature="426:2258" ph="{...}" />
-            <marker date="1562551801386" expanded="true" signature="485:548" ph="{...}" />
-            <marker date="1562551801386" expanded="true" signature="771:1259" ph="{...}" />
-            <marker date="1562551801386" expanded="true" signature="857:1121" ph="{...}" />
-            <marker date="1562551801386" expanded="true" signature="1447:2252" ph="{...}" />
-            <marker date="1562551801386" expanded="true" signature="1494:1571" ph="{...}" />
-            <marker date="1562551801386" expanded="true" signature="1588:1847" ph="{...}" />
-            <marker date="1562551801386" expanded="true" signature="2003:2161" ph="{...}" />
+            <marker date="1562813415000" expanded="false" signature="6:363" ph="..." />
+            <marker date="1562813415000" expanded="true" signature="399:2260" ph="{...}" />
+            <marker date="1562813415000" expanded="true" signature="426:2258" ph="{...}" />
+            <marker date="1562813415000" expanded="true" signature="485:548" ph="{...}" />
+            <marker date="1562813415000" expanded="true" signature="771:1259" ph="{...}" />
+            <marker date="1562813415000" expanded="true" signature="857:1121" ph="{...}" />
+            <marker date="1562813415000" expanded="true" signature="1447:2252" ph="{...}" />
+            <marker date="1562813415000" expanded="true" signature="1494:1571" ph="{...}" />
+            <marker date="1562813415000" expanded="true" signature="1588:1847" ph="{...}" />
+            <marker date="1562813415000" expanded="true" signature="2003:2161" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/dotnet/sdk/2.2.107/Microsoft.Common.CurrentVersion.targets">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63030">
-          <caret line="4202" column="26" selection-start-line="4202" selection-start-column="26" selection-end-line="4202" selection-end-column="26" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/2H.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Card.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding>
-            <marker date="1562717475237" expanded="true" signature="6:30" ph="..." />
-            <marker date="1562717475237" expanded="true" signature="66:340" ph="{...}" />
-            <marker date="1562717475237" expanded="true" signature="90:338" ph="{...}" />
-            <marker date="1562717475237" expanded="true" signature="241:331" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/2S.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Deck.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-          <folding>
-            <marker date="1562837952458" expanded="true" signature="6:64" ph="..." />
-            <marker date="1562837952458" expanded="true" signature="100:1414" ph="{...}" />
-            <marker date="1562837952458" expanded="true" signature="124:1412" ph="{...}" />
-            <marker date="1562837952458" expanded="true" signature="296:1081" ph="{...}" />
-            <marker date="1562837952458" expanded="true" signature="348:477" ph="{...}" />
-            <marker date="1562837952458" expanded="true" signature="603:675" ph="/* String value = faces[52 % 11]; ... */" />
-            <marker date="1562837952458" expanded="true" signature="739:1048" ph="{...}" />
-            <marker date="1562837952458" expanded="true" signature="784:894" ph="{...}" />
-            <marker date="1562837952458" expanded="true" signature="915:1030" ph="{...}" />
-            <marker date="1562837952458" expanded="true" signature="1111:1406" ph="{...}" />
-            <marker date="1562837952458" expanded="true" signature="1183:1396" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/3C.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/3D.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/3H.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/3S.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/4C.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/4D.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/4H.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/4S.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/5C.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/5D.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/5H.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/5S.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/6C.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/6D.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/6H.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/6S.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/7C.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/7D.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/7H.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/7S.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/8C.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/8D.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/8H.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/8S.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/9C.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/9D.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/9H.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/9S.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/10C.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/10D.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/10H.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/10S.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/AC.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/AD.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/AH.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/AS.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/blue_back.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/JC.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/JD.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/JH.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
