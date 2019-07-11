@@ -19,7 +19,7 @@ namespace TestWebSocketApplication
             string[] suits = { "Hearts", "Clubs", "Diamonds", "Spades" };
             randomNum = new Random();
 
-            String value = faces[52 % 11];
+           // String value = faces[52 % 11];
             // value = suits[52 / 13];
 
             for (int count = 0; count < NUMBER_CARDS; count++)
