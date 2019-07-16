@@ -1,30 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Juan\\Documents\\GitHub\\California\\TestWebSocketApplication\\TestWebSocketApplication.csproj": {}
+    "/Users/awilcox/Desktop/CaliforniaSpeed/TestWebSocketApplication/TestWebSocketApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Juan\\Documents\\GitHub\\California\\TestWebSocketApplication\\TestWebSocketApplication.csproj": {
+    "/Users/awilcox/Desktop/CaliforniaSpeed/TestWebSocketApplication/TestWebSocketApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Juan\\Documents\\GitHub\\California\\TestWebSocketApplication\\TestWebSocketApplication.csproj",
+        "projectUniqueName": "/Users/awilcox/Desktop/CaliforniaSpeed/TestWebSocketApplication/TestWebSocketApplication.csproj",
         "projectName": "TestWebSocketApplication",
-        "projectPath": "C:\\Users\\Juan\\Documents\\GitHub\\California\\TestWebSocketApplication\\TestWebSocketApplication.csproj",
-        "packagesPath": "C:\\Users\\Juan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Juan\\Documents\\GitHub\\California\\TestWebSocketApplication\\obj\\",
+        "projectPath": "/Users/awilcox/Desktop/CaliforniaSpeed/TestWebSocketApplication/TestWebSocketApplication.csproj",
+        "packagesPath": "/Users/awilcox/.nuget/packages/",
+        "outputPath": "/Users/awilcox/Desktop/CaliforniaSpeed/TestWebSocketApplication/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Juan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/awilcox/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
