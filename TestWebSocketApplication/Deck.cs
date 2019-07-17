@@ -7,11 +7,21 @@ namespace TestWebSocketApplication
     public class Deck
     {
         private List<Card> cards = new List<Card>();
-        private const int NUMBER_CARDS = 53;
+        private List<Card> player1 = new List<Card>();
+        private List<Card> player2 = new List<Card>();
+        private const int NUMBER_CARDS = 52;
         private Random randomNum;
 
-        public void createDeck()
+        private void createDeck()
         {
+            string[] images =
+            {
+                "AH.png","2H.png","3H.png","4H.png","5H.png","6H.png","7H.png","8H.png","9H.png","10H.png","JH.png","QH.png","KH.png",
+                "AC.png","2C.png","3C.png","4C.png","5C.png","6C.png","7C.png","8C.png","9C.png","10C.png","JC.png","QC.png","KC.png",
+                "AD.png","2D.png","3D.png","4D.png","5D.png","6D.png","7D.png","8D.png","9D.png","10D.png","JD.png","QD.png","KD.png",
+                "AS.png","2S.png","3S.png","4S.png","5S.png","6S.png","7S.png","8S.png","9S.png","10S.png","JS.png","QS.png","KS.png"
+            };
+
             string[] faces =
             {
                 "Ace","Two","Three", "Four", "Five","Six","Seven","Eight","Nine", "Ten",
@@ -19,22 +29,20 @@ namespace TestWebSocketApplication
             string[] suits = { "Hearts", "Clubs", "Diamonds", "Spades" };
             randomNum = new Random();
 
-           // String value = faces[52 % 11];
-            // value = suits[52 / 13];
-
             for (int count = 0; count < NUMBER_CARDS; count++)
             {
-                if(count > 51)
+                /*if (count > 51)
                 {
-                    cards.Add(new Card(faces[count % 11], suits[51/13]));
+                    cards.Add(new Card(images[count], faces[count % 11], suits[51 / 13]));
                 }
                 else
-                {
-                    cards.Add(new Card(faces[count % 11], suits[count / 13]));
-                }
-   
+                {*/
+                cards.Add(new Card(images[count], faces[count % 11], suits[count / 13]));
+                //  }
+
             }
             shuffle();
+            split();
         }
         public void shuffle()
         {
@@ -46,5 +54,24 @@ namespace TestWebSocketApplication
                 cards[second] = temp;
             }
         }
+
+        public void split()
+        {
+            int counter = 0;
+            foreach (Card item in cards)
+            {
+                if (counter < 22)
+                {
+                    player1.Add(item);
+                }
+                else
+                {
+                    player2.Add(item);
+                }
+                counter++;
+            }
+        }
+
     }
+
 }
