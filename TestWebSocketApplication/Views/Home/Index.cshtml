@@ -24,7 +24,20 @@
 
 @* Game Area Rows *@
 <div class="container h-100" style="background-image: url(../images/background.jpg); background-position: center; padding-top: 100px; padding-bottom: 100px; border-style: solid; border-width: 5px; border-color: black; border-radius: 25px;">
+    
+    @* Top Player Hand *@
     <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-5 col-md-5 col-lg-5 col-xl-5 col-sm-5"></div>
+        <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2">
+            <div id="playerOneHand" class="border: none" style="width: 100px;" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img id ="pOneHand" class="card-img-top" src="~/images/10C.png" alt="playing_card" ondragstart="drag(event)">
+            </div>    
+        </div>
+        <div class="col-5 col-md-5 col-lg-5 col-xl-5 col-sm-5"></div>
+    </div>
+    
+    @* Top Row Game Zone *@
+    <div class="row h-100 justify-content-center align-items-center" style="margin-top: 20px">
         <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2"></div>
         
         <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2">
@@ -54,7 +67,8 @@
         <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2"></div>
     </div>
     
-    <div class="row h-100 justify-content-center align-items-center" style="margin-top: 175px; margin-bottom: 175px;">
+    @* Bottom Row Game Zone *@
+    <div class="row h-100 justify-content-center align-items-center" style="margin-top: 20px;">
         
         <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2"></div>
         
@@ -84,6 +98,18 @@
         
         <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2"></div>
     </div>
+    
+    @* Bottom Player Hand *@
+    <div class="row h-100 justify-content-center align-items-center" style="margin-top: 20px;">
+            <div class="col-5 col-md-5 col-lg-5 col-xl-5 col-sm-5"></div>
+            <div class="col-2 col-md-2 col-lg-2 col-xl-2 col-sm-2">
+                <div id="playerTwoHand" class="border: none" style="width: 100px;" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img id ="pTwoHand" class="card-img-top" src="~/images/QH.png" alt="playing_card" ondragstart="drag(event)">
+                </div>    
+            </div>
+            <div class="col-5 col-md-5 col-lg-5 col-xl-5 col-sm-5"></div>
+        </div>
+    
 </div>
 
 <script src="~/js/signalr.js"></script>
