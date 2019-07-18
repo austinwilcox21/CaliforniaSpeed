@@ -5,9 +5,9 @@ namespace TestWebSocketApplication
 {
     public class Card
     {
-        private string image;
-        private string suit;
-        private string faceValue;
+        public string image;
+        public string suit;
+        public string faceValue;
         //  private bool isPlayable;
 
         public Card(string image, string suit, string faceValue)

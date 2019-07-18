@@ -20,7 +20,7 @@ var connection = new signalR.HubConnectionBuilder()
     .withUrl("/ChatHub")
     .build();
 
-// Initialize the signalR connection
+//Create signalR connection
 connection.start().catch(err => console.error(err.toString()));
 
 //-----------------------------------------------------------------------------------
@@ -43,6 +43,15 @@ connection.on("ReceiveGame", (startPosition, endPosition) =>
     document.getElementById(endPosition).replaceWith(document.getElementById(startPosition));   
 });
 
+//Receives Deck object in the form of Json to be unloaded
+connection.on("ReceiveStartGame", (jsonDeck) =>
+{
+    // TODO: deserialize json into objects that we can use
+
+    //var arr_from_json = JSON.parse(jsonDeck);
+    //console.log("arrfrom json: " + arr_from_json.cards[0]);
+});
+
 //--------------------------------------------------------------------
 // CALLING HUB METHODS FROM CLIENT (called by using invoke() method) |
 //--------------------------------------------------------------------
@@ -55,6 +64,7 @@ document.getElementById("sendMessage").addEventListener("click", event =>
 
     //Take the name and message entered into the box and send it to SERVER function SendMessage() in Chathub.cs
     connection.invoke("SendMessage", user, message).catch(err => console.error(err.toString()));
+    connection.invoke("StartGame");
     event.preventDefault();
 });
 

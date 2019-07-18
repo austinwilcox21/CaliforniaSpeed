@@ -6,13 +6,13 @@ namespace TestWebSocketApplication
 {
     public class Deck
     {
-        private List<Card> cards = new List<Card>();
-        private List<Card> player1 = new List<Card>();
-        private List<Card> player2 = new List<Card>();
-        private const int NUMBER_CARDS = 52;
-        private Random randomNum;
+        public List<Card> cards = new List<Card>();
+        public List<Card> player1 = new List<Card>();
+        public List<Card> player2 = new List<Card>();
+        public const int NUMBER_CARDS = 52;
+        public Random randomNum;
 
-        private void createDeck()
+        public void createDeck()
         {
             string[] images =
             {
@@ -60,7 +60,7 @@ namespace TestWebSocketApplication
             int counter = 0;
             foreach (Card item in cards)
             {
-                if (counter < 22)
+                if (counter < 26)
                 {
                     player1.Add(item);
                 }
