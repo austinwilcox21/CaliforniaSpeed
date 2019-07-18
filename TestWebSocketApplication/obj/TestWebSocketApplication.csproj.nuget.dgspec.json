@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Juan\\Documents\\GitHub\\California\\TestWebSocketApplication\\TestWebSocketApplication.csproj": {}
+    "C:\\Users\\Juan\\Documents\\GitHub\\CaliforniaSpeed\\TestWebSocketApplication\\TestWebSocketApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Juan\\Documents\\GitHub\\California\\TestWebSocketApplication\\TestWebSocketApplication.csproj": {
+    "C:\\Users\\Juan\\Documents\\GitHub\\CaliforniaSpeed\\TestWebSocketApplication\\TestWebSocketApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Juan\\Documents\\GitHub\\California\\TestWebSocketApplication\\TestWebSocketApplication.csproj",
+        "projectUniqueName": "C:\\Users\\Juan\\Documents\\GitHub\\CaliforniaSpeed\\TestWebSocketApplication\\TestWebSocketApplication.csproj",
         "projectName": "TestWebSocketApplication",
-        "projectPath": "C:\\Users\\Juan\\Documents\\GitHub\\California\\TestWebSocketApplication\\TestWebSocketApplication.csproj",
+        "projectPath": "C:\\Users\\Juan\\Documents\\GitHub\\CaliforniaSpeed\\TestWebSocketApplication\\TestWebSocketApplication.csproj",
         "packagesPath": "C:\\Users\\Juan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Juan\\Documents\\GitHub\\California\\TestWebSocketApplication\\obj\\",
+        "outputPath": "C:\\Users\\Juan\\Documents\\GitHub\\CaliforniaSpeed\\TestWebSocketApplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
