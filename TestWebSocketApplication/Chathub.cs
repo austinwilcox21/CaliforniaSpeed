@@ -28,7 +28,8 @@ namespace TestWebSocketApplication
         public async Task StartGame()
         {
             Deck gameDeck = new Deck();
-            gameDeck.createDeck();
+            gameDeck.CreateDeck();
+            gameDeck.Deal();
 
             var jsonDeck = JsonConvert.SerializeObject(gameDeck);
 

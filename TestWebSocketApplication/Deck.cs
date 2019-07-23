@@ -10,6 +10,9 @@ namespace TestWebSocketApplication
         public List<Card> cards = new List<Card>();
         public List<Card> playerOneHand = new List<Card>();
         public List<Card> playerTwoHand = new List<Card>();
+
+        public List<Card> cardsInGame = new List<Card>();
+
         public const int NUMBER_CARDS = 52;
         public Random randomNum;
 
@@ -70,7 +73,31 @@ namespace TestWebSocketApplication
 
         public void Deal()
         {
-            
+            //Set the position for the top four cards of player one to the gameboard
+            for(int i = 0; i < 4; i++)
+            {
+                playerOneHand[i].position = i + 1;
+
+                //Add to cards in game list
+                cardsInGame.Add(playerOneHand[i]);
+
+                //Remove from hand list
+                playerOneHand.RemoveAt(i);
+
+            }
+
+            //Set the position for the top four cards of player two to the gameboard
+            for (int i = 4; i < 8; i++)
+            {
+                playerTwoHand[i].position = i + 1;
+
+                //Add to cards in game list
+                cardsInGame.Add(playerTwoHand[i]);
+
+                //Remove from hand list
+                playerTwoHand.RemoveAt(i);
+
+            }
         }
 
     }

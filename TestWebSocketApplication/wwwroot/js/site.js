@@ -46,10 +46,20 @@ connection.on("ReceiveGame", (startPosition, endPosition) =>
 //Receives Deck object in the form of Json to be unloaded
 connection.on("ReceiveStartGame", (jsonDeck) =>
 {
-    // TODO: deserialize json into objects that we can use
+    var arr_from_json = JSON.parse(jsonDeck);
+    
+    //Examples on how to access specific pieces of json array
+    console.log("The gameDeck List: " + arr_from_json.cardsInGame);
+    console.log("A specific Card Object: " + arr_from_json.cardsInGame[0]);
+    console.log("That card's position: " + arr_from_json.cardsInGame[0].position);
+    console.log("That card's imagePath: " + arr_from_json.cardsInGame[0].imagePath);
 
-    //var arr_from_json = JSON.parse(jsonDeck);
-    //console.log("arrfrom json: " + arr_from_json.cards[0]);
+    //Iterate through the decks and set image paths for each position
+    for (i in arr_from_json.cardsInGame)
+    {
+        document.getElementById("pos" + arr_from_json.cardsInGame[i].position).src = "../images/" + arr_from_json.cardsInGame[i].imagePath;
+    }
+
 });
 
 //--------------------------------------------------------------------
@@ -63,7 +73,7 @@ document.getElementById("sendMessage").addEventListener("click", event =>
     const message = document.getElementById("userMessage").value;
 
     //Take the name and message entered into the box and send it to SERVER function SendMessage() in Chathub.cs
-    connection.invoke("SendMessage", user, message).catch(err => console.error(err.toString()));
+    //connection.invoke("SendMessage", user, message).catch(err => console.error(err.toString()));
     connection.invoke("StartGame");
     event.preventDefault();
 });
