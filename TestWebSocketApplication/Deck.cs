@@ -1,18 +1,19 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using Microsoft.Extensions.ObjectPool;
 
 namespace TestWebSocketApplication
 {
     public class Deck
     {
         public List<Card> cards = new List<Card>();
-        public List<Card> player1 = new List<Card>();
-        public List<Card> player2 = new List<Card>();
+        public List<Card> playerOneHand = new List<Card>();
+        public List<Card> playerTwoHand = new List<Card>();
         public const int NUMBER_CARDS = 52;
         public Random randomNum;
 
-        public void createDeck()
+        public void CreateDeck()
         {
             string[] images =
             {
@@ -25,51 +26,51 @@ namespace TestWebSocketApplication
             string[] faces =
             {
                 "Ace","Two","Three", "Four", "Five","Six","Seven","Eight","Nine", "Ten",
-                "Jack","Queen","King"};
+                "Jack","Queen","King"
+            };
+            
             string[] suits = { "Hearts", "Clubs", "Diamonds", "Spades" };
             randomNum = new Random();
 
-            for (int count = 0; count < NUMBER_CARDS; count++)
+            for (var count = 0; count < NUMBER_CARDS; count++)
             {
-                /*if (count > 51)
-                {
-                    cards.Add(new Card(images[count], faces[count % 11], suits[51 / 13]));
-                }
-                else
-                {*/
                 cards.Add(new Card(images[count], suits[count / 13], faces[count % 13]));
-                //  }
-
             }
-            shuffle();
-            split();
+            
+            Shuffle();
+            Split();
         }
-        public void shuffle()
+        private void Shuffle()
         {
-            for (int first = 0; first < cards.Count; first++)
+            for (var first = 0; first < cards.Count; first++)
             {
-                int second = randomNum.Next(NUMBER_CARDS);
-                Card temp = cards[first];
+                var second = randomNum.Next(NUMBER_CARDS);
+                var temp = cards[first];
                 cards[first] = cards[second];
                 cards[second] = temp;
             }
         }
 
-        public void split()
+        private void Split()
         {
-            int counter = 0;
-            foreach (Card item in cards)
+            var counter = 0;
+            foreach (var item in cards)
             {
                 if (counter < 26)
                 {
-                    player1.Add(item);
+                    playerOneHand.Add(item);
                 }
                 else
                 {
-                    player2.Add(item);
+                    playerTwoHand.Add(item);
                 }
                 counter++;
             }
+        }
+
+        public void Deal()
+        {
+            
         }
 
     }

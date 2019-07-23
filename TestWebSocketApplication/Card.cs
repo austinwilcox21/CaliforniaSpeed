@@ -5,17 +5,42 @@ namespace TestWebSocketApplication
 {
     public class Card
     {
-        public string image;
-        public string suit;
-        public string faceValue;
-        //  private bool isPlayable;
+        private string imagePath;
+        private string suit;
+        private string faceValue;
+        private int position;
+        public bool CanBePlayedOn = false;
 
-        public Card(string image, string suit, string faceValue)
+        public Card(string imagePath, string suit, string faceValue)
         {
-            this.image = image;
+            this.imagePath = imagePath;
             this.suit = suit;
             this.faceValue = faceValue;
-            //      this.isPlayable = false;
+        }
+
+        public string GetImagePath()
+        {
+            return imagePath;
+        }
+
+        public string GetSuit()
+        {
+            return suit;
+        }
+
+        public string GetFaceValue()
+        {
+            return faceValue;
+        }
+
+        public void SetPosition(int pos)
+        {
+            
+        }
+
+        public int GetPosition()
+        {
+            return position;
         }
 
     }
