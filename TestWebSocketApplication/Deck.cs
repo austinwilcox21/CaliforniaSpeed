@@ -37,7 +37,7 @@ namespace TestWebSocketApplication
                 }
                 else
                 {*/
-                cards.Add(new Card(images[count], faces[count % 11], suits[count / 13]));
+                cards.Add(new Card(images[count], suits[count / 13], faces[count % 13]));
                 //  }
 
             }
