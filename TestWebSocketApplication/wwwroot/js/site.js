@@ -60,6 +60,10 @@ connection.on("ReceiveStartGame", (jsonDeck) =>
         document.getElementById("pos" + arr_from_json.cardsInGame[i].position).src = "../images/" + arr_from_json.cardsInGame[i].imagePath;
     }
 
+    //Set the player hands to the top card on their deck
+    document.getElementById("pOneHand").src = "../images/" + arr_from_json.playerOneHand[0].imagePath;
+    document.getElementById("pTwoHand").src = "../images/" + arr_from_json.playerTwoHand[0].imagePath;
+
 });
 
 //--------------------------------------------------------------------
