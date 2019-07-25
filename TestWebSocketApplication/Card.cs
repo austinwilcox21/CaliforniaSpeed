@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using System;
 using System.IO;
 
@@ -5,17 +6,28 @@ namespace TestWebSocketApplication
 {
     public class Card
     {
-        public string imagePath;
-        public string suit;
-        public string faceValue;
-        public int position = 0;
-        public bool CanBePlayedOn = false;
+        [JsonProperty]
+        public string ImagePath { get; set; }
 
-        public Card(string imagePath, string suit, string faceValue)
+        [JsonProperty]
+        public string suit { get; set; }
+
+        [JsonProperty]
+        public string faceValue { get; set; }
+
+        [JsonProperty]
+        public int Position { get; set; }
+
+        [JsonProperty]
+        public bool CanBePlayedOn { get; set; }
+
+        public Card(string ImagePath, string suit, string faceValue)
         {
-            this.imagePath = imagePath;
+            this.ImagePath = ImagePath;
             this.suit = suit;
             this.faceValue = faceValue;
+            CanBePlayedOn = false;
+            // set position?
         }
 
     }

@@ -1,21 +1,32 @@
-using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace TestWebSocketApplication
 {
     public class Game
     {
-        private int playerOneScore;
-        private int playerTwoScore;
+        [JsonProperty]
+        public static int playerOneScore { get; set; }
+
+        [JsonProperty]
+        public static int playerTwoScore { get; set; }
+
+        //[JsonProperty]
+        //public static List<Card> MiddleCards { get; set; }
+
+        [JsonProperty]
+        public static Deck MyDeck { get; set; }
+
+        public Game()
+        {
+            playerOneScore = 0;
+            playerTwoScore = 0;
+            //CardsInGame = ;
+            MyDeck = new Deck();
+        }
 
         public void CountCards()
         {
-            
-        }
 
-        public Deck MyDeck()
-        {
-
-            return null;
         }
 
         public void MoveCard(int toPosition, int playerScore)
@@ -26,12 +37,6 @@ namespace TestWebSocketApplication
         public void StartNewGame()
         {
             
-        }
-
-        public List<Card> MiddleCards()
-        {
-            
-            return null;
         }
     }
 }

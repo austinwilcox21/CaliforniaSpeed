@@ -2,22 +2,29 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using Microsoft.Extensions.ObjectPool;
+using Newtonsoft.Json;
 
 namespace TestWebSocketApplication
 {
     public class Deck
     {
-        public List<Card> cards = new List<Card>();
-        public List<Card> playerOneHand = new List<Card>();
-        public List<Card> playerTwoHand = new List<Card>();
+        [JsonProperty]
+        public static List<Card> PlayerOneHand { get; set; }
 
-        public List<Card> cardsInGame = new List<Card>();
+        [JsonProperty]
+        public static List<Card> PlayerTwoHand { get; set; }
 
+        [JsonProperty]
+        public static List<Card> CardsInGame { get; set; }
         public const int NUMBER_CARDS = 52;
-        public Random randomNum;
+        public static Random randomNum;
 
-        public void CreateDeck()
+        public Deck()
         {
+            PlayerOneHand = new List<Card>();
+            PlayerTwoHand = new List<Card>();
+            CardsInGame = new List<Card>();
+
             string[] images =
             {
                 "AH.png","2H.png","3H.png","4H.png","5H.png","6H.png","7H.png","8H.png","9H.png","10H.png","JH.png","QH.png","KH.png",
@@ -35,15 +42,17 @@ namespace TestWebSocketApplication
             string[] suits = { "Hearts", "Clubs", "Diamonds", "Spades" };
             randomNum = new Random();
 
+            List<Card> Cards = new List<Card>();
             for (var count = 0; count < NUMBER_CARDS; count++)
             {
-                cards.Add(new Card(images[count], suits[count / 13], faces[count % 13]));
+                
+                Cards.Add(new Card(images[count], suits[count / 13], faces[count % 13]));
             }
             
-            Shuffle();
-            Split();
+            Shuffle(Cards);
+            Split(Cards);
         }
-        private void Shuffle()
+        private void Shuffle(List<Card> cards)
         {
             for (var first = 0; first < cards.Count; first++)
             {
@@ -54,18 +63,18 @@ namespace TestWebSocketApplication
             }
         }
 
-        private void Split()
+        private void Split(List<Card> cards)
         {
             var counter = 0;
             foreach (var item in cards)
             {
                 if (counter < 26)
                 {
-                    playerOneHand.Add(item);
+                    PlayerOneHand.Add(item);
                 }
                 else
                 {
-                    playerTwoHand.Add(item);
+                    PlayerTwoHand.Add(item);
                 }
                 counter++;
             }
@@ -76,26 +85,26 @@ namespace TestWebSocketApplication
             //Set the position for the top four cards of player one to the gameboard
             for(int i = 0; i < 4; i++)
             {
-                playerOneHand[i].position = i + 1;
+                PlayerOneHand[i].Position = i + 1;
 
                 //Add to cards in game list
-                cardsInGame.Add(playerOneHand[i]);
+                CardsInGame.Add(PlayerOneHand[i]);
 
                 //Remove from hand list
-                playerOneHand.RemoveAt(i);
+                PlayerOneHand.RemoveAt(i);
 
             }
 
             //Set the position for the top four cards of player two to the gameboard
             for (int i = 4; i < 8; i++)
             {
-                playerTwoHand[i].position = i + 1;
+                PlayerTwoHand[i].Position = i + 1;
 
                 //Add to cards in game list
-                cardsInGame.Add(playerTwoHand[i]);
+                CardsInGame.Add(PlayerTwoHand[i]);
 
                 //Remove from hand list
-                playerTwoHand.RemoveAt(i);
+                PlayerTwoHand.RemoveAt(i);
 
             }
         }
