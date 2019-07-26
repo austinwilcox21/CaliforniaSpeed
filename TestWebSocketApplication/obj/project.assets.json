@@ -8958,6 +8958,7 @@
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.AspNet.SignalR.JS >= 2.4.1",
       "Microsoft.AspNetCore >= 2.2.0",
+      "Microsoft.AspNetCore.Antiforgery >= 2.2.0",
       "Microsoft.AspNetCore.CookiePolicy >= 2.2.0",
       "Microsoft.AspNetCore.HttpsPolicy >= 2.2.0",
       "Microsoft.AspNetCore.Mvc >= 2.2.0",
@@ -9013,6 +9014,10 @@
             "version": "[2.4.1, )"
           },
           "Microsoft.AspNetCore": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
+          "Microsoft.AspNetCore.Antiforgery": {
             "target": "Package",
             "version": "[2.2.0, )"
           },

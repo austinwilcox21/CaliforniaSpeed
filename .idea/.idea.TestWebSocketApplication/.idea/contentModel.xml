@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$PROJECT_DIR$" t="IncludeFlat">
+    <e p="C:\Users\Juan\.Rider2019.1\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\Juan\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Juan\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_TestWebSocketApplication.1938253862.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Juan\Documents\GitHub\CaliforniaSpeed" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="TestWebSocketApplication" t="IncludeRecursive">
         <e p="app.config" t="Include" />
@@ -14,6 +17,7 @@
           <e p="HomeController.cs" t="Include" />
         </e>
         <e p="Deck.cs" t="Include" />
+        <e p="Game.cs" t="Include" />
         <e p="Models" t="Include">
           <e p="ErrorViewModel.cs" t="Include" />
         </e>
@@ -166,7 +170,5 @@
       </e>
       <e p="TestWebSocketApplication.sln" t="IncludeFlat" />
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2019.1/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_TestWebSocketApplication.1848683497.00" t="ExcludeRecursive" />
   </component>
 </project>

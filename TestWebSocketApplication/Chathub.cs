@@ -21,10 +21,10 @@ namespace TestWebSocketApplication
             
             if (MyGame != null)
             {
-                if (ValidateMove())
+                if (ValidateMove(player,endPosition))
                 {
                     // Relay information back to clients to the function ReceiveGame in site.js
-                    Int32.TryParse(endPosition, out int endPos);
+                   Int32.TryParse(endPosition, out int endPos);
                     MyGame.MyDeck.PlayerOneHand[0].Position = endPos;
                     var JsonGame = JsonConvert.SerializeObject(MyGame);
                     await Clients.All.SendAsync("ReceiveGame", JsonGame);
@@ -32,8 +32,10 @@ namespace TestWebSocketApplication
             }
         }
 
-        private bool ValidateMove()
+        private bool ValidateMove(int player, string endPosition)
         {
+            if (MyGame.MyDeck.CardsInGame[endPosition].CanBePlayedOn == false)
+                return true;
             return true;
             //return false;
         }
