@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
-using Microsoft.Extensions.ObjectPool;
 using Newtonsoft.Json;
 
 namespace TestWebSocketApplication
@@ -9,15 +7,15 @@ namespace TestWebSocketApplication
     public class Deck
     {
         [JsonProperty]
-        public static List<Card> PlayerOneHand { get; set; }
+        public  List<Card> PlayerOneHand { get; set; }
 
         [JsonProperty]
-        public static List<Card> PlayerTwoHand { get; set; }
+        public List<Card> PlayerTwoHand { get; set; }
 
         [JsonProperty]
-        public static List<Card> CardsInGame { get; set; }
+        public List<Card> CardsInGame { get; set; }
         public const int NUMBER_CARDS = 52;
-        public static Random randomNum;
+        public Random randomNum;
 
         public Deck()
         {
@@ -42,16 +40,17 @@ namespace TestWebSocketApplication
             string[] suits = { "Hearts", "Clubs", "Diamonds", "Spades" };
             randomNum = new Random();
 
-            List<Card> Cards = new List<Card>();
+            List<Card> cards = new List<Card>();
             for (var count = 0; count < NUMBER_CARDS; count++)
             {
                 
-                Cards.Add(new Card(images[count], suits[count / 13], faces[count % 13]));
+                cards.Add(new Card(images[count], suits[count / 13], faces[count % 13]));
             }
             
-            Shuffle(Cards);
-            Split(Cards);
+            Shuffle(cards);
+            Split(cards);
         }
+
         private void Shuffle(List<Card> cards)
         {
             for (var first = 0; first < cards.Count; first++)
@@ -92,7 +91,6 @@ namespace TestWebSocketApplication
 
                 //Remove from hand list
                 PlayerOneHand.RemoveAt(i);
-
             }
 
             //Set the position for the top four cards of player two to the gameboard
@@ -105,10 +103,7 @@ namespace TestWebSocketApplication
 
                 //Remove from hand list
                 PlayerTwoHand.RemoveAt(i);
-
             }
         }
-
     }
-
 }

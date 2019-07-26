@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.SignalR;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using System;
 
 namespace TestWebSocketApplication
 {
@@ -24,8 +23,40 @@ namespace TestWebSocketApplication
                 if (ValidateMove())
                 {
                     // Relay information back to clients to the function ReceiveGame in site.js
-                    Int32.TryParse(endPosition, out int endPos);
+                    int endPos = 0;
+                    switch (endPosition)
+                    {
+                        case "pos1":
+                            endPos = 1;
+                            break;
+                        case "pos2":
+                            endPos = 2;
+                            break;
+                        case "pos3":
+                            endPos = 3;
+                            break;
+                        case "pos4":
+                            endPos = 4;
+                            break;
+                        case "pos5":
+                            endPos = 5;
+                            break;
+                        case "pos6":
+                            endPos = 6;
+                            break;
+                        case "pos7":
+                            endPos = 7;
+                            break;
+                        case "pos8":
+                            endPos = 8;
+                            break;
+                        default:
+                            break;
+                    }
                     MyGame.MyDeck.PlayerOneHand[0].Position = endPos;
+                    MyGame.MyDeck.CardsInGame.Insert(endPos - 1, MyGame.MyDeck.PlayerOneHand[0]);
+                    MyGame.MyDeck.CardsInGame.RemoveAt(endPos);
+                    MyGame.MyDeck.PlayerOneHand.RemoveAt(0);
                     var JsonGame = JsonConvert.SerializeObject(MyGame);
                     await Clients.All.SendAsync("ReceiveGame", JsonGame);
                 }
@@ -45,7 +76,7 @@ namespace TestWebSocketApplication
         public async Task StartGame()
         {
             MyGame = new Game();
-            Game.MyDeck.Deal();
+            MyGame.MyDeck.Deal();
 
             var JsonGame = JsonConvert.SerializeObject(MyGame);
 

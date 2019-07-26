@@ -37,32 +37,49 @@ connection.on("ReceiveMessage", (user, message) => {
 });
 
 //Game: Update cards to reflect what has been determined by the server
-connection.on("ReceiveGame", (startPosition, endPosition) => 
+connection.on("ReceiveGame", (jsonGame) => 
 {
+    var arr_from_json = JSON.parse(jsonGame)
+    console.log(arr_from_json);
     //replace second card with first card
-    document.getElementById(endPosition).replaceWith(document.getElementById(startPosition));   
+    console.log("../images/" + arr_from_json.MyDeck.PlayerOneHand[0].ImagePath);
+    document.getElementById("pOneHand").src = "../images/" + arr_from_json.MyDeck.PlayerOneHand[0].ImagePath;
+    document.getElementById("pTwoHand").src = "../images/" + arr_from_json.MyDeck.PlayerTwoHand[0].ImagePath;
+    document.getElementById("pos" + arr_from_json.MyDeck.CardsInGame[0].Position).src = "../images/" + arr_from_json.MyDeck.CardsInGame[0].ImagePath;
+    document.getElementById("pos" + arr_from_json.MyDeck.CardsInGame[1].Position).src = "../images/" + arr_from_json.MyDeck.CardsInGame[1].ImagePath;
+    document.getElementById("pos" + arr_from_json.MyDeck.CardsInGame[2].Position).src = "../images/" + arr_from_json.MyDeck.CardsInGame[2].ImagePath;
+    document.getElementById("pos" + arr_from_json.MyDeck.CardsInGame[3].Position).src = "../images/" + arr_from_json.MyDeck.CardsInGame[3].ImagePath;
+    document.getElementById("pos" + arr_from_json.MyDeck.CardsInGame[4].Position).src = "../images/" + arr_from_json.MyDeck.CardsInGame[4].ImagePath;
+    document.getElementById("pos" + arr_from_json.MyDeck.CardsInGame[5].Position).src = "../images/" + arr_from_json.MyDeck.CardsInGame[5].ImagePath;
+    document.getElementById("pos" + arr_from_json.MyDeck.CardsInGame[6].Position).src = "../images/" + arr_from_json.MyDeck.CardsInGame[6].ImagePath;
+    document.getElementById("pos" + arr_from_json.MyDeck.CardsInGame[7].Position).src = "../images/" + arr_from_json.MyDeck.CardsInGame[7].ImagePath;
+    
 });
 
 //Receives Deck object in the form of Json to be unloaded
-connection.on("ReceiveStartGame", (jsonDeck) =>
+connection.on("ReceiveStartGame", (jsonGame) =>
 {
-    var arr_from_json = JSON.parse(jsonDeck);
-    
+    var arr_from_json = JSON.parse(jsonGame);
+    console.log(arr_from_json);
     //Examples on how to access specific pieces of json array
-    console.log("The gameDeck List: " + arr_from_json.cardsInGame);
-    console.log("A specific Card Object: " + arr_from_json.cardsInGame[0]);
-    console.log("That card's position: " + arr_from_json.cardsInGame[0].position);
-    console.log("That card's imagePath: " + arr_from_json.cardsInGame[0].imagePath);
+    console.log("The gameDeck List: " + arr_from_json.MyDeck.CardsInGame);
+    console.log("A specific card Object: " + arr_from_json.MyDeck.CardsInGame[0]);
+    console.log("That card's position: " + arr_from_json.MyDeck.CardsInGame[0].Position);
+    console.log("That card's imagePath: " + arr_from_json.MyDeck.CardsInGame[0].ImagePath);
 
     //Iterate through the decks and set image paths for each position
-    for (i in arr_from_json.cardsInGame)
+    var card;
+    var positionElement;
+    for (i in arr_from_json.MyDeck.CardsInGame)
     {
-        document.getElementById("pos" + arr_from_json.cardsInGame[i].position).src = "../images/" + arr_from_json.cardsInGame[i].imagePath;
+        card = arr_from_json.MyDeck.CardsInGame[i];
+        positionElement = document.getElementById("pos" + (card.Position));
+        positionElement.src = "../images/" + card.ImagePath;
     }
 
     //Set the player hands to the top card on their deck
-    document.getElementById("pOneHand").src = "../images/" + arr_from_json.playerOneHand[0].imagePath;
-    document.getElementById("pTwoHand").src = "../images/" + arr_from_json.playerTwoHand[0].imagePath;
+    document.getElementById("pOneHand").src = "../images/" + arr_from_json.MyDeck.PlayerOneHand[0].ImagePath;
+    document.getElementById("pTwoHand").src = "../images/" + arr_from_json.MyDeck.PlayerTwoHand[0].ImagePath;
 
 });
 
@@ -104,14 +121,14 @@ function drop(ev)
     ev.preventDefault();
 
     // Determines the names of the <img> of the card being moved and the card being dropped onto
-    var startPosition = ev.dataTransfer.getData("text");
+    var player = 1; // This should be the actual player, not just player 1
     var endPosition = ev.target.id;
 
-    console.log("sourcePosition = " + startPosition);
+    console.log("player = " + player);
     console.log("destinationPosition = " + endPosition);
 
     //Take the positions of both cards allowed in the move and send to SERVER function MoveCard() in Chathub.cs
-    connection.invoke("MoveCard", startPosition, endPosition).catch(err => console.error(err.toString()));
+    connection.invoke("MoveCard", player, endPosition).catch(err => console.error(err.toString()));
     
     // TODO: Send that info to the server to see if move is allowed??
 
