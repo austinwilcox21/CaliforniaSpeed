@@ -67,7 +67,7 @@ namespace TestWebSocketApplication
                 }
             }
         }
-
+        
         private void updatePlayableCards()
         {
             foreach (Card card in MyGame.MyDeck.CardsInGame)

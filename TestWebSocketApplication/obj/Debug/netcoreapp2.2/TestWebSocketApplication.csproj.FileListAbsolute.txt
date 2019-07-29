@@ -91,6 +91,7 @@ C:/Users/Juan/Documents/GitHub/California/TestWebSocketApplication/obj/Debug/net
 /Users/awilcox/Desktop/CaliforniaSpeed/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.dll
 /Users/awilcox/Desktop/CaliforniaSpeed/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.pdb
 /Users/awilcox/Desktop/CaliforniaSpeed/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.csproj.CopyComplete
+<<<<<<< HEAD
 C:\Users\nsand\Documents\school\Weber15\CS3750\CaliforniaSpeed\TestWebSocketApplication\bin\Debug\netcoreapp2.2\TestWebSocketApplication.dll.config
 C:\Users\nsand\Documents\school\Weber15\CS3750\CaliforniaSpeed\TestWebSocketApplication\bin\Debug\netcoreapp2.2\TestWebSocketApplication.deps.json
 C:\Users\nsand\Documents\school\Weber15\CS3750\CaliforniaSpeed\TestWebSocketApplication\bin\Debug\netcoreapp2.2\TestWebSocketApplication.runtimeconfig.json
@@ -122,3 +123,36 @@ C:\Users\nsand\Documents\school\Weber15\CS3750\CaliforniaSpeed\TestWebSocketAppl
 C:\Users\nsand\Documents\school\Weber15\CS3750\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\TestWebSocketApplication.dll
 C:\Users\nsand\Documents\school\Weber15\CS3750\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\TestWebSocketApplication.pdb
 C:\Users\nsand\Documents\school\Weber15\CS3750\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\TestWebSocketApplication.csproj.CopyComplete
+=======
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\bin\Debug\netcoreapp2.2\TestWebSocketApplication.dll.config
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\bin\Debug\netcoreapp2.2\TestWebSocketApplication.deps.json
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\bin\Debug\netcoreapp2.2\TestWebSocketApplication.runtimeconfig.json
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\bin\Debug\netcoreapp2.2\TestWebSocketApplication.runtimeconfig.dev.json
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\bin\Debug\netcoreapp2.2\TestWebSocketApplication.dll
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\bin\Debug\netcoreapp2.2\TestWebSocketApplication.pdb
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\bin\Debug\netcoreapp2.2\TestWebSocketApplication.Views.dll
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\bin\Debug\netcoreapp2.2\TestWebSocketApplication.Views.pdb
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\TestWebSocketApplication.csprojAssemblyReference.cache
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\TestWebSocketApplication.csproj.CoreCompileInputs.cache
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\TestWebSocketApplication.RazorAssemblyInfo.cache
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\TestWebSocketApplication.RazorAssemblyInfo.cs
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\TestWebSocketApplication.AssemblyInfoInputs.cache
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\TestWebSocketApplication.AssemblyInfo.cs
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\TestWebSocketApplication.TagHelpers.input.cache
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\TestWebSocketApplication.TagHelpers.output.cache
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\TestWebSocketApplication.RazorCoreGenerate.cache
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\TestWebSocketApplication.RazorTargetAssemblyInfo.cache
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\TestWebSocketApplication.RazorTargetAssemblyInfo.cs
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\TestWebSocketApplication.Views.pdb
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\TestWebSocketApplication.dll
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\TestWebSocketApplication.pdb
+C:\Users\Juan\Documents\GitHub\CaliforniaSpeed\TestWebSocketApplication\obj\Debug\netcoreapp2.2\TestWebSocketApplication.csproj.CopyComplete
+>>>>>>> 1ef55c66d96a4d55909854bf6cb2cac54cffdaec

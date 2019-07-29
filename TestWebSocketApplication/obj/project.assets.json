@@ -8980,6 +8980,7 @@
       "Json.Net >= 1.0.16",
       "Microsoft.AspNet.SignalR.JS >= 2.4.1",
       "Microsoft.AspNetCore >= 2.2.0",
+      "Microsoft.AspNetCore.Antiforgery >= 2.2.0",
       "Microsoft.AspNetCore.CookiePolicy >= 2.2.0",
       "Microsoft.AspNetCore.HttpsPolicy >= 2.2.0",
       "Microsoft.AspNetCore.Mvc >= 2.2.0",
@@ -9042,6 +9043,10 @@
             "target": "Package",
             "version": "[2.2.0, )"
           },
+          "Microsoft.AspNetCore.Antiforgery": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
           "Microsoft.AspNetCore.CookiePolicy": {
             "target": "Package",
             "version": "[2.2.0, )"
@@ -9080,5 +9085,13 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\nsand\\Documents\\school\\Weber15\\CS3750\\CaliforniaSpeed\\TestWebSocketApplication\\obj\\TestWebSocketApplication.csproj.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
