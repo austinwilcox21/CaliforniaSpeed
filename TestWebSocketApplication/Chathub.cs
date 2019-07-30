@@ -80,9 +80,6 @@ namespace TestWebSocketApplication
         
         private Boolean updatePlayableCards()
         {
-            // This is set to true if there is at least one match
-            Boolean playable = false;
-
             foreach (Card card in MyGame.MyDeck.CardsInGame)
             {
                 int counter = 0;
@@ -98,14 +95,22 @@ namespace TestWebSocketApplication
                 }
                 if (counter > 1)
                 {
-                    playable = true;
                     foreach (Card match in matches)
                     {
                         match.CanBePlayedOn = true;
                     }
                 }
             }
-            return playable;
+
+            // This is set to true if there is at least one match
+            foreach (Card card in MyGame.MyDeck.CardsInGame)
+            {
+                if (card.CanBePlayedOn == true)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         private bool ValidateMove(int player, int endPos)
