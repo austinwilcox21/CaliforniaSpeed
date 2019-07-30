@@ -52,7 +52,6 @@ namespace TestWebSocketApplication
                     default:
                         break;
                 }
-                updatePlayableCards();
                 if (ValidateMove(player,endPos))
                 {
                     // Relay information back to clients to the function ReceiveGame in site.js
@@ -62,14 +61,28 @@ namespace TestWebSocketApplication
                     MyGame.MyDeck.CardsInGame.Insert(endPos - 1, MyGame.MyDeck.PlayerOneHand[0]);
                     MyGame.MyDeck.CardsInGame.RemoveAt(endPos);
                     MyGame.MyDeck.PlayerOneHand.RemoveAt(0);
+
+                    // TODO add 1 to the player's score
+
+
+                    // update every time a card is played.
+                    if (!updatePlayableCards())
+                    {
+                        // there are no more cards left to play. time to reshuffle.
+                        Console.WriteLine("Time to reshuffle...");
+                    }
+
                     var JsonGame = JsonConvert.SerializeObject(MyGame);
                     await Clients.All.SendAsync("ReceiveGame", JsonGame);
                 }
             }
         }
         
-        private void updatePlayableCards()
+        private Boolean updatePlayableCards()
         {
+            // This is set to true if there is at least one match
+            Boolean playable = false;
+
             foreach (Card card in MyGame.MyDeck.CardsInGame)
             {
                 int counter = 0;
@@ -85,12 +98,14 @@ namespace TestWebSocketApplication
                 }
                 if (counter > 1)
                 {
+                    playable = true;
                     foreach (Card match in matches)
                     {
                         match.CanBePlayedOn = true;
                     }
                 }
             }
+            return playable;
         }
 
         private bool ValidateMove(int player, int endPos)
@@ -111,6 +126,13 @@ namespace TestWebSocketApplication
         {
             MyGame = new Game();
             MyGame.MyDeck.Deal();
+
+            // initial check to see if cards are playable
+            if (!updatePlayableCards())
+            {
+                // there are no more cards left to play. time to reshuffle.
+                Console.WriteLine("Time to reshuffle...");
+            }
 
             var JsonGame = JsonConvert.SerializeObject(MyGame);
 
