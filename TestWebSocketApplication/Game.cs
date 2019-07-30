@@ -13,6 +13,7 @@ namespace TestWebSocketApplication
         // we wanted to move this one to the game class instead of deck. It works either way though...
         //[JsonProperty]
         //public static List<Card> MiddleCards { get; set; }
+        private static int PlayerAssignment { get; set; } = 0;
 
         [JsonProperty]
         public Deck MyDeck { get; set; }
@@ -28,6 +29,18 @@ namespace TestWebSocketApplication
         public void CountCards()
         {
             // at the end of the game. Need to make sure we increment every time we play a card.
+        }
+
+        public int GetPlayerAssignment()
+        {
+            PlayerAssignment++;
+
+            if(PlayerAssignment == 3)
+            {
+                PlayerAssignment = 1;
+            }
+
+            return PlayerAssignment;
         }
 
         // this one is actually being done by site.js...

@@ -68,6 +68,7 @@ namespace TestWebSocketApplication
             }
         }
         
+        
         private void updatePlayableCards()
         {
             foreach (Card card in MyGame.MyDeck.CardsInGame)
@@ -113,8 +114,9 @@ namespace TestWebSocketApplication
             MyGame.MyDeck.Deal();
 
             var JsonGame = JsonConvert.SerializeObject(MyGame);
+            var playerAssignment = MyGame.GetPlayerAssignment();
 
-            await Clients.All.SendAsync("ReceiveStartGame", JsonGame);
+            await Clients.All.SendAsync("ReceiveStartGame", JsonGame, playerAssignment);
         }
     }
 }

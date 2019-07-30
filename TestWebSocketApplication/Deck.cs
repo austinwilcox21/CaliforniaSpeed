@@ -81,6 +81,21 @@ namespace TestWebSocketApplication
 
         public void Deal()
         {
+            if(PlayerOneHand.Count < 4 || PlayerTwoHand.Count < 4)
+            {
+                if(PlayerOneHand.Count < PlayerTwoHand.Count)
+                {
+                    //Player 1 wins
+                }
+                else if (PlayerTwoHand.Count < PlayerOneHand.Count)
+                {
+                    //Player 2 wins
+                }
+                else{
+                    //Add points logic
+                }
+            }
+
             //Set the position for the top four cards of player one to the gameboard
             for(int i = 0; i < 4; i++)
             {
