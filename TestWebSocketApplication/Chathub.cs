@@ -63,11 +63,44 @@ namespace TestWebSocketApplication
                     MyGame.MyDeck.PlayerOneHand.RemoveAt(0);
 
                     // TODO add 1 to the player's score
+                    MyGame.PlayerOneScore++;
+                    if (MyGame.MyDeck.PlayerOneHand.Count == 0)
+                    {
+                        Console.WriteLine("Player One Wins");
+                    }
+                    else if (MyGame.MyDeck.PlayerOneHand.Count == 0)
+                    {
+                        Console.WriteLine("Player Two Wins");
+                    }
 
 
                     // update every time a card is played.
                     if (!updatePlayableCards())
                     {
+                        if ((MyGame.MyDeck.PlayerOneHand.Count > MyGame.MyDeck.PlayerTwoHand.Count) && (MyGame.MyDeck.PlayerTwoHand.Count <= 4 && MyGame.MyDeck.PlayerOneHand.Count <= 4))
+                        {
+                            Console.WriteLine("Player One Wins");
+                        }
+                        else if ((MyGame.MyDeck.PlayerOneHand.Count == MyGame.MyDeck.PlayerTwoHand.Count) && (MyGame.MyDeck.PlayerTwoHand.Count <= 4 && MyGame.MyDeck.PlayerOneHand.Count <= 4))
+                        {
+                            if (MyGame.PlayerOneScore > MyGame.PlayerTwoScore)
+                            {
+                                Console.WriteLine("Player One Wins");
+                            }
+                            else if (MyGame.PlayerOneScore == MyGame.PlayerTwoScore)
+                            {
+                                Console.WriteLine("There is a tie");
+                            }
+                            else if (MyGame.PlayerOneScore < MyGame.PlayerTwoScore)
+                            {
+                                Console.WriteLine("Player Two Wins");
+                            }
+                        }
+                        else if ((MyGame.MyDeck.PlayerOneHand.Count < MyGame.MyDeck.PlayerTwoHand.Count) && (MyGame.MyDeck.PlayerTwoHand.Count <= 4 && MyGame.MyDeck.PlayerOneHand.Count <= 4))
+                        {
+                            Console.WriteLine("Player Two Wins");
+                        }
+                        
                         // there are no more cards left to play. time to reshuffle.
                         Console.WriteLine("Time to reshuffle...");
                     }
@@ -136,6 +169,8 @@ namespace TestWebSocketApplication
             if (!updatePlayableCards())
             {
                 // there are no more cards left to play. time to reshuffle.
+                
+                
                 Console.WriteLine("Time to reshuffle...");
             }
 

@@ -3178,7 +3178,7 @@
       ]
     },
     "Json.Net/1.0.16": {
-      "sha512": "kFEw3EjjO1LN429+ltBm+bPGbG91VsDVRX0wPnq2KsAOYlwVVyRQTuDz3vE+wlVKu5SOSAQLsUxS5svnrkbPTQ==",
+      "sha512": "pHhXLlwtOy7RHFUbV/9NXhjU+vtgz7CCki5Sc3DCzCavfJxoJrLTBys5T7j2l1+RE6Pk1MfskkRzuFhl+jh5Lw==",
       "type": "package",
       "path": "json.net/1.0.16",
       "files": [
@@ -8991,23 +8991,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nsand\\.nuget\\packages\\": {},
+    "C:\\Users\\Juan\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nsand\\Documents\\school\\Weber15\\CS3750\\CaliforniaSpeed\\TestWebSocketApplication\\TestWebSocketApplication.csproj",
+      "projectUniqueName": "C:\\Users\\Juan\\Documents\\GitHub\\CaliforniaSpeed\\TestWebSocketApplication\\TestWebSocketApplication.csproj",
       "projectName": "TestWebSocketApplication",
-      "projectPath": "C:\\Users\\nsand\\Documents\\school\\Weber15\\CS3750\\CaliforniaSpeed\\TestWebSocketApplication\\TestWebSocketApplication.csproj",
-      "packagesPath": "C:\\Users\\nsand\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nsand\\Documents\\school\\Weber15\\CS3750\\CaliforniaSpeed\\TestWebSocketApplication\\obj\\",
+      "projectPath": "C:\\Users\\Juan\\Documents\\GitHub\\CaliforniaSpeed\\TestWebSocketApplication\\TestWebSocketApplication.csproj",
+      "packagesPath": "C:\\Users\\Juan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Juan\\Documents\\GitHub\\CaliforniaSpeed\\TestWebSocketApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\nsand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Juan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9085,13 +9085,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\nsand\\Documents\\school\\Weber15\\CS3750\\CaliforniaSpeed\\TestWebSocketApplication\\obj\\TestWebSocketApplication.csproj.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

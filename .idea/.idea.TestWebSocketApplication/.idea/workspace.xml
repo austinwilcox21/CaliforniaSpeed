@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1cfde34-17cc-4998-aecc-810e58237d7f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestWebSocketApplication/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestWebSocketApplication/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestWebSocketApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestWebSocketApplication/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/TestWebSocketApplication/DesignTimeBuild/.dtbcache" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/TestWebSocketApplication/DesignTimeBuild/.dtbcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/TestWebSocketApplication/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/TestWebSocketApplication/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/TestWebSocketApplication/v16/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/TestWebSocketApplication/v16/Server/sqlite3/storage.ide" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/Chathub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/Chathub.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/TestWebSocketApplication.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/TestWebSocketApplication.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/Deck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/Deck.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/bin/Debug/netcoreapp2.2/TestWebSocketApplication.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/bin/Debug/netcoreapp2.2/TestWebSocketApplication.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/bin/Debug/netcoreapp2.2/TestWebSocketApplication.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/bin/Debug/netcoreapp2.2/TestWebSocketApplication.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/bin/Debug/netcoreapp2.2/TestWebSocketApplication.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/bin/Debug/netcoreapp2.2/TestWebSocketApplication.deps.json" afterDir="false" />
@@ -23,12 +18,10 @@
       <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/Razor/Views/_ViewStart.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/Razor/Views/_ViewStart.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.RazorCoreGenerate.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebSocketApplication/obj/Debug/netcoreapp2.2/TestWebSocketApplication.pdb" afterDir="false" />
@@ -53,25 +46,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Deck.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-109">
-              <caret line="72" column="35" lean-forward="true" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+            <state relative-caret-position="1350">
+              <caret line="110" column="18" selection-start-line="110" selection-start-column="18" selection-end-line="110" selection-end-column="18" />
               <folding>
-                <marker date="1564160921728" expanded="false" signature="6:126" ph="..." />
-                <marker date="1564160921728" expanded="true" signature="162:3508" ph="{...}" />
-                <marker date="1564160921728" expanded="true" signature="186:3505" ph="{...}" />
-                <marker date="1564160921728" expanded="true" signature="551:1932" ph="{...}" />
-                <marker date="1564160921728" expanded="true" signature="741:1295" ph="{...}" />
-                <marker date="1564160921728" expanded="true" signature="1339:1481" ph="{...}" />
-                <marker date="1564160921728" expanded="true" signature="1720:1855" ph="{...}" />
-                <marker date="1564160921728" expanded="true" signature="1979:2273" ph="{...}" />
-                <marker date="1564160921728" expanded="true" signature="2051:2263" ph="{...}" />
-                <marker date="1564160921728" expanded="true" signature="2319:2680" ph="{...}" />
-                <marker date="1564160921728" expanded="true" signature="2398:2670" ph="{...}" />
-                <marker date="1564160921728" expanded="true" signature="2446:2527" ph="{...}" />
-                <marker date="1564160921728" expanded="true" signature="2548:2629" ph="{...}" />
-                <marker date="1564160921728" expanded="true" signature="2708:3498" ph="{...}" />
-                <marker date="1564160921728" expanded="true" signature="2842:3102" ph="{...}" />
-                <marker date="1564160921728" expanded="true" signature="3228:3488" ph="{...}" />
+                <marker date="1564554826006" expanded="false" signature="6:70" ph="..." />
+                <marker date="1564554826006" expanded="true" signature="106:3527" ph="{...}" />
+                <marker date="1564554826006" expanded="true" signature="130:3525" ph="{...}" />
+                <marker date="1564554826006" expanded="true" signature="468:1849" ph="{...}" />
+                <marker date="1564554826006" expanded="true" signature="658:1212" ph="{...}" />
+                <marker date="1564554826006" expanded="true" signature="1256:1398" ph="{...}" />
+                <marker date="1564554826006" expanded="true" signature="1637:1772" ph="{...}" />
+                <marker date="1564554826006" expanded="true" signature="1897:2191" ph="{...}" />
+                <marker date="1564554826006" expanded="true" signature="1969:2181" ph="{...}" />
+                <marker date="1564554826006" expanded="true" signature="2237:2598" ph="{...}" />
+                <marker date="1564554826006" expanded="true" signature="2316:2588" ph="{...}" />
+                <marker date="1564554826006" expanded="true" signature="2364:2445" ph="{...}" />
+                <marker date="1564554826006" expanded="true" signature="2466:2547" ph="{...}" />
+                <marker date="1564554826006" expanded="true" signature="2626:3414" ph="{...}" />
+                <marker date="1564554826006" expanded="true" signature="2760:3019" ph="{...}" />
+                <marker date="1564554826006" expanded="true" signature="3145:3404" ph="{...}" />
+                <marker date="1564554826006" expanded="true" signature="3460:3519" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -80,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/js/site.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1520">
+            <state>
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -91,13 +85,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Card.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="255">
               <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
               <folding>
-                <marker date="1564160921591" expanded="false" signature="6:53" ph="..." />
-                <marker date="1564160921591" expanded="true" signature="89:734" ph="{...}" />
-                <marker date="1564160921591" expanded="true" signature="113:732" ph="{...}" />
-                <marker date="1564160921591" expanded="true" signature="531:725" ph="{...}" />
+                <marker date="1564430607240" expanded="false" signature="6:53" ph="..." />
+                <marker date="1564430607240" expanded="true" signature="89:734" ph="{...}" />
+                <marker date="1564430607240" expanded="true" signature="113:732" ph="{...}" />
+                <marker date="1564430607240" expanded="true" signature="531:725" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -106,16 +100,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Game.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            <state relative-caret-position="165">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding>
-                <marker date="1564160921738" expanded="true" signature="58:885" ph="{...}" />
-                <marker date="1564160921738" expanded="true" signature="82:883" ph="{...}" />
-                <marker date="1564160921738" expanded="true" signature="255:332" ph="/* [JsonProperty] ... */" />
-                <marker date="1564160921738" expanded="true" signature="427:574" ph="{...}" />
-                <marker date="1564160921738" expanded="true" signature="608:629" ph="{...}" />
-                <marker date="1564160921738" expanded="true" signature="692:808" ph="{...}" />
-                <marker date="1564160921738" expanded="true" signature="844:877" ph="{...}" />
+                <marker date="1564430607276" expanded="true" signature="58:1173" ph="{...}" />
+                <marker date="1564430607276" expanded="true" signature="82:1171" ph="{...}" />
+                <marker date="1564430607276" expanded="true" signature="241:421" ph="/* we wanted to move this one to the game class instead of deck. It works either way though... ... */" />
+                <marker date="1564430607276" expanded="true" signature="509:656" ph="{...}" />
+                <marker date="1564430607276" expanded="true" signature="690:807" ph="{...}" />
+                <marker date="1564430607276" expanded="true" signature="927:1043" ph="{...}" />
+                <marker date="1564430607276" expanded="true" signature="1132:1165" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -124,19 +118,39 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Chathub.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="180">
+              <caret line="100" column="57" selection-start-line="100" selection-start-column="57" selection-end-line="100" selection-end-column="57" />
               <folding>
-                <marker date="1564166040236" expanded="false" signature="6:102" ph="..." />
-                <marker date="1564166040236" expanded="true" signature="138:1858" ph="{...}" />
-                <marker date="1564166040236" expanded="true" signature="170:1856" ph="{...}" />
-                <marker date="1564166040236" expanded="true" signature="279:464" ph="{...}" />
-                <marker date="1564166040236" expanded="true" signature="540:1181" ph="{...}" />
-                <marker date="1564166040236" expanded="true" signature="677:1171" ph="{...}" />
-                <marker date="1564166040236" expanded="true" signature="745:1157" ph="{...}" />
-                <marker date="1564166040236" expanded="true" signature="1248:1429" ph="{...}" />
-                <marker date="1564166040236" expanded="true" signature="1439:1590" ph="/// Starts Game by creating a new deck object and sending it to the client ... " />
-                <marker date="1564166040236" expanded="true" signature="1628:1850" ph="{...}" />
+                <marker date="1564558822735" expanded="false" signature="6:136" ph="..." />
+                <marker date="1564558822735" expanded="true" signature="172:6775" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="204:6773" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="313:498" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="574:4630" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="711:4620" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="794:1690" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="1739:4606" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="2334:2440" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="2509:2615" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="2724:4441" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="2933:3051" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="3244:3933" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="3349:3479" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="3564:3693" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="3777:3907" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="4125:4243" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="4685:5735" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="4756:5426" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="4965:5195" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="5048:5177" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="5228:5412" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="5298:5394" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="5554:5699" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="5616:5685" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="5794:6048" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="5955:6012" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="6058:6209" ph="/// Starts Game by creating a new deck object and sending it to the client ... " />
+                <marker date="1564558822735" expanded="true" signature="6247:6767" ph="{...}" />
+                <marker date="1564558822735" expanded="true" signature="6423:6620" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -161,9 +175,9 @@
       <list>
         <option value="$APPLICATION_CONFIG_DIR$/scratches/Deck.cs" />
         <option value="$PROJECT_DIR$/TestWebSocketApplication/Card.cs" />
-        <option value="$PROJECT_DIR$/TestWebSocketApplication/Deck.cs" />
         <option value="$PROJECT_DIR$/TestWebSocketApplication/Views/Home/Index.cshtml" />
         <option value="$PROJECT_DIR$/TestWebSocketApplication/wwwroot/js/site.js" />
+        <option value="$PROJECT_DIR$/TestWebSocketApplication/Deck.cs" />
         <option value="$PROJECT_DIR$/TestWebSocketApplication/Chathub.cs" />
       </list>
     </option>
@@ -179,37 +193,10 @@
     </navigator>
     <panes>
       <pane id="SolutionExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="TestWebSocketApplication" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="TestWebSocketApplication" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="TestWebSocketApplication" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="TestWebSocketApplication" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="TestWebSocketApplication" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="TestWebSocketApplication" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="TestWebSocketApplication" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="js" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
       <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,11 +270,12 @@
       <workItem from="1562813933315" duration="231000" />
       <workItem from="1563854883027" duration="757000" />
       <workItem from="1564161520336" duration="4404000" />
+      <workItem from="1564545277926" duration="10707000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18826000" />
+    <option name="totallyTimeSpent" value="29533000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -300,15 +288,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.287226" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29176116" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.328" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2544" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2384" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -345,21 +332,7 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/js/site.js</url>
           <line>103</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/TestWebSocketApplication/Chathub.cs</url>
-          <line>48</line>
-          <properties documentPath="$PROJECT_DIR$/TestWebSocketApplication/Chathub.cs" initialLine="48">
-            <startOffsets>
-              <option value="1651" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1671" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/TestWebSocketApplication/Deck.cs</url>
@@ -376,16 +349,29 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/TestWebSocketApplication/Chathub.cs</url>
-          <line>21</line>
-          <properties documentPath="$PROJECT_DIR$/TestWebSocketApplication/Chathub.cs" initialLine="21">
+          <line>54</line>
+          <properties documentPath="$PROJECT_DIR$/TestWebSocketApplication/Chathub.cs" initialLine="54">
             <startOffsets>
-              <option value="658" />
+              <option value="1707" />
             </startOffsets>
             <endOffsets>
-              <option value="677" />
+              <option value="1739" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TestWebSocketApplication/Chathub.cs</url>
+          <line>66</line>
+          <properties documentPath="$PROJECT_DIR$/TestWebSocketApplication/Chathub.cs" initialLine="66">
+            <startOffsets>
+              <option value="2291" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2334" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -520,93 +506,114 @@
     <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/QS.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/2D.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/JS.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/KC.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Card.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-          <folding>
-            <marker date="1564160921591" expanded="false" signature="6:53" ph="..." />
-            <marker date="1564160921591" expanded="true" signature="89:734" ph="{...}" />
-            <marker date="1564160921591" expanded="true" signature="113:732" ph="{...}" />
-            <marker date="1564160921591" expanded="true" signature="531:725" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Game.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-          <folding>
-            <marker date="1564160921738" expanded="true" signature="58:885" ph="{...}" />
-            <marker date="1564160921738" expanded="true" signature="82:883" ph="{...}" />
-            <marker date="1564160921738" expanded="true" signature="255:332" ph="/* [JsonProperty] ... */" />
-            <marker date="1564160921738" expanded="true" signature="427:574" ph="{...}" />
-            <marker date="1564160921738" expanded="true" signature="608:629" ph="{...}" />
-            <marker date="1564160921738" expanded="true" signature="692:808" ph="{...}" />
-            <marker date="1564160921738" expanded="true" signature="844:877" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Deck.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-109">
-          <caret line="72" column="35" lean-forward="true" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
-          <folding>
-            <marker date="1564160921728" expanded="false" signature="6:126" ph="..." />
-            <marker date="1564160921728" expanded="true" signature="162:3508" ph="{...}" />
-            <marker date="1564160921728" expanded="true" signature="186:3505" ph="{...}" />
-            <marker date="1564160921728" expanded="true" signature="551:1932" ph="{...}" />
-            <marker date="1564160921728" expanded="true" signature="741:1295" ph="{...}" />
-            <marker date="1564160921728" expanded="true" signature="1339:1481" ph="{...}" />
-            <marker date="1564160921728" expanded="true" signature="1720:1855" ph="{...}" />
-            <marker date="1564160921728" expanded="true" signature="1979:2273" ph="{...}" />
-            <marker date="1564160921728" expanded="true" signature="2051:2263" ph="{...}" />
-            <marker date="1564160921728" expanded="true" signature="2319:2680" ph="{...}" />
-            <marker date="1564160921728" expanded="true" signature="2398:2670" ph="{...}" />
-            <marker date="1564160921728" expanded="true" signature="2446:2527" ph="{...}" />
-            <marker date="1564160921728" expanded="true" signature="2548:2629" ph="{...}" />
-            <marker date="1564160921728" expanded="true" signature="2708:3498" ph="{...}" />
-            <marker date="1564160921728" expanded="true" signature="2842:3102" ph="{...}" />
-            <marker date="1564160921728" expanded="true" signature="3228:3488" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/images/2D.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/wwwroot/js/site.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1520">
+        <state>
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Card.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <folding>
+            <marker date="1564430607240" expanded="false" signature="6:53" ph="..." />
+            <marker date="1564430607240" expanded="true" signature="89:734" ph="{...}" />
+            <marker date="1564430607240" expanded="true" signature="113:732" ph="{...}" />
+            <marker date="1564430607240" expanded="true" signature="531:725" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Game.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <marker date="1564430607276" expanded="true" signature="58:1173" ph="{...}" />
+            <marker date="1564430607276" expanded="true" signature="82:1171" ph="{...}" />
+            <marker date="1564430607276" expanded="true" signature="241:421" ph="/* we wanted to move this one to the game class instead of deck. It works either way though... ... */" />
+            <marker date="1564430607276" expanded="true" signature="509:656" ph="{...}" />
+            <marker date="1564430607276" expanded="true" signature="690:807" ph="{...}" />
+            <marker date="1564430607276" expanded="true" signature="927:1043" ph="{...}" />
+            <marker date="1564430607276" expanded="true" signature="1132:1165" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Deck.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="110" column="18" selection-start-line="110" selection-start-column="18" selection-end-line="110" selection-end-column="18" />
+          <folding>
+            <marker date="1564554826006" expanded="false" signature="6:70" ph="..." />
+            <marker date="1564554826006" expanded="true" signature="106:3527" ph="{...}" />
+            <marker date="1564554826006" expanded="true" signature="130:3525" ph="{...}" />
+            <marker date="1564554826006" expanded="true" signature="468:1849" ph="{...}" />
+            <marker date="1564554826006" expanded="true" signature="658:1212" ph="{...}" />
+            <marker date="1564554826006" expanded="true" signature="1256:1398" ph="{...}" />
+            <marker date="1564554826006" expanded="true" signature="1637:1772" ph="{...}" />
+            <marker date="1564554826006" expanded="true" signature="1897:2191" ph="{...}" />
+            <marker date="1564554826006" expanded="true" signature="1969:2181" ph="{...}" />
+            <marker date="1564554826006" expanded="true" signature="2237:2598" ph="{...}" />
+            <marker date="1564554826006" expanded="true" signature="2316:2588" ph="{...}" />
+            <marker date="1564554826006" expanded="true" signature="2364:2445" ph="{...}" />
+            <marker date="1564554826006" expanded="true" signature="2466:2547" ph="{...}" />
+            <marker date="1564554826006" expanded="true" signature="2626:3414" ph="{...}" />
+            <marker date="1564554826006" expanded="true" signature="2760:3019" ph="{...}" />
+            <marker date="1564554826006" expanded="true" signature="3145:3404" ph="{...}" />
+            <marker date="1564554826006" expanded="true" signature="3460:3519" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TestWebSocketApplication/Chathub.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        <state relative-caret-position="180">
+          <caret line="100" column="57" selection-start-line="100" selection-start-column="57" selection-end-line="100" selection-end-column="57" />
           <folding>
-            <marker date="1564166040236" expanded="false" signature="6:102" ph="..." />
-            <marker date="1564166040236" expanded="true" signature="138:1858" ph="{...}" />
-            <marker date="1564166040236" expanded="true" signature="170:1856" ph="{...}" />
-            <marker date="1564166040236" expanded="true" signature="279:464" ph="{...}" />
-            <marker date="1564166040236" expanded="true" signature="540:1181" ph="{...}" />
-            <marker date="1564166040236" expanded="true" signature="677:1171" ph="{...}" />
-            <marker date="1564166040236" expanded="true" signature="745:1157" ph="{...}" />
-            <marker date="1564166040236" expanded="true" signature="1248:1429" ph="{...}" />
-            <marker date="1564166040236" expanded="true" signature="1439:1590" ph="/// Starts Game by creating a new deck object and sending it to the client ... " />
-            <marker date="1564166040236" expanded="true" signature="1628:1850" ph="{...}" />
+            <marker date="1564558822735" expanded="false" signature="6:136" ph="..." />
+            <marker date="1564558822735" expanded="true" signature="172:6775" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="204:6773" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="313:498" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="574:4630" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="711:4620" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="794:1690" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="1739:4606" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="2334:2440" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="2509:2615" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="2724:4441" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="2933:3051" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="3244:3933" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="3349:3479" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="3564:3693" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="3777:3907" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="4125:4243" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="4685:5735" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="4756:5426" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="4965:5195" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="5048:5177" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="5228:5412" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="5298:5394" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="5554:5699" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="5616:5685" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="5794:6048" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="5955:6012" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="6058:6209" ph="/// Starts Game by creating a new deck object and sending it to the client ... " />
+            <marker date="1564558822735" expanded="true" signature="6247:6767" ph="{...}" />
+            <marker date="1564558822735" expanded="true" signature="6423:6620" ph="{...}" />
           </folding>
         </state>
       </provider>
