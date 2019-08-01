@@ -28,12 +28,14 @@ connection.start().catch(err => console.error(err.toString()));
 //-----------------------------------------------------------------------------------
 
 //Messenger: Display Message to Client (user)
-connection.on("ReceiveMessage", (user, message) => {
-    const rec_msg = user + ": " + message;
-    const li = document.createElement("li");
+connection.on("ReceiveMessage", (user, playerAssignment) => {
+    var buildPlayerID = "Player" + "" + playerAssignment + "" + "Label";
 
-    li.textContent = rec_msg;
-    document.getElementById("messageList").appendChild(li);
+    document.getElementById(buildPlayerID).innerHTML = user;
+    document.getElementById(buildPlayerID).style.backgroundColor = "blue";
+    document.getElementById(buildPlayerID).style.color = "white";
+
+    console.log(playerAssignment);
 });
 
 //Game: Update cards to reflect what has been determined by the server
@@ -57,9 +59,18 @@ connection.on("ReceiveGame", (jsonGame) =>
 });
 
 //Receives Deck object in the form of Json to be unloaded
-connection.on("ReceiveStartGame", (jsonGame) =>
+connection.on("ReceiveStartGame", (jsonGame, playerAssignment) =>
 {
-    var arr_from_json = JSON.parse(jsonGame);
+    var arr_from_json = JSON.parse(jsonGame, playerAssignment);
+
+    // if (playerAssignment == '1') {
+    //     document.getElementById('Player1Label').innerHTML = 'Player 1';
+    //     document.getElementById('player2Label').innerHTML = '';
+    // } else if(playerAssignment == '2'){
+    //     document.getElementById('Player2Label').innerHTML = 'Player 2';
+    //     document.getElementById('Player1Label').innerHTML = '';
+    // }
+
     console.log(arr_from_json);
     //Examples on how to access specific pieces of json array
     console.log("The gameDeck List: " + arr_from_json.MyDeck.CardsInGame);
@@ -83,6 +94,11 @@ connection.on("ReceiveStartGame", (jsonGame) =>
 
 });
 
+//Show who won the game
+connection.on("GameIsOver", (PlayerWhoWon) =>{
+    alert(PlayerWhoWon);
+})
+
 //--------------------------------------------------------------------
 // CALLING HUB METHODS FROM CLIENT (called by using invoke() method) |
 //--------------------------------------------------------------------
@@ -90,12 +106,13 @@ connection.on("ReceiveStartGame", (jsonGame) =>
 //MESSENGER: Send Message to Server on button click
 document.getElementById("sendMessage").addEventListener("click", event =>
 {
-    const user = document.getElementById("userName").value;
-    const message = document.getElementById("userMessage").value;
-
-    //Take the name and message entered into the box and send it to SERVER function SendMessage() in Chathub.cs
-    //connection.invoke("SendMessage", user, message).catch(err => console.error(err.toString()));
     connection.invoke("StartGame");
+    const user = document.getElementById("userName").value;
+
+    console.log(user);
+    //Take the name and message entered into the box and send it to SERVER function SendMessage() in Chathub.cs
+    connection.invoke("SendMessage", user).catch(err => console.error(err.toString()));
+    
     event.preventDefault();
 });
 
@@ -109,19 +126,32 @@ function allowDrop(ev)
     ev.preventDefault();
 }
 
+var player = 0;
+
 // A function that enables a card to be dragged
 function drag(ev)
 {
     ev.dataTransfer.setData("text", ev.target.id);
+    playerWhoMadeMove = ev.target.id;
+    if(ev.target.id == 'pOneHand'){
+        player = 1;
+    }
+    else if(ev.target.id == 'pTwoHand'){
+        player = 2;
+    }
 }
 
+
 // When card is dropped onto another card
-function drop(ev)
+function drop(ev, playerWhoMadeMove)
 {
     ev.preventDefault();
 
+    console.log(ev);
+    console.log(ev.target);
+
     // Determines the names of the <img> of the card being moved and the card being dropped onto
-    var player = 1; // This should be the actual player, not just player 1
+    //var player = 1; // This should be the actual player, not just player 1
     var endPosition = ev.target.id;
 
     console.log("player = " + player);

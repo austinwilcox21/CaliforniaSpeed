@@ -10,10 +10,23 @@ namespace TestWebSocketApplication
     {
         public static Game MyGame;
 
-        public async Task SendMessage(string user, string message)
+        public async Task SendMessage(string user)
         {
             // Relay information back to clients to the function ReceiveMessage in site.js
-            await Clients.All.SendAsync("ReceiveMessage", user, message);
+            //TODO
+            //Check this and see if this will work
+
+            var playerAssignment = MyGame.GetPlayerAssignment();
+            if(playerAssignment == 1)
+            {
+                MyGame.PlayerOnesName = user;
+            }
+            else if(playerAssignment == 2)
+            {
+                MyGame.PlayerTwosName = user;
+            }
+
+            await Clients.All.SendAsync("ReceiveMessage", user, playerAssignment);
         }
         
         public async Task MoveCard(int player, string endPosition)
@@ -56,14 +69,34 @@ namespace TestWebSocketApplication
                 if (ValidateMove(player,endPos))
                 {
                     // Relay information back to clients to the function ReceiveGame in site.js
-                    
+                    if(player == 1){
+                        MyGame.MyDeck.PlayerOneHand[0].Position = endPos;
+                        MyGame.MyDeck.CardsInGame.Insert(endPos - 1, MyGame.MyDeck.PlayerOneHand[0]);
+                        MyGame.MyDeck.CardsInGame.RemoveAt(endPos);
+                        MyGame.MyDeck.PlayerOneHand.RemoveAt(0);
+                    }
+                    else if(player == 2){
+                        MyGame.MyDeck.PlayerTwoHand[0].Position = endPos;
+                        MyGame.MyDeck.CardsInGame.Insert(endPos - 1, MyGame.MyDeck.PlayerTwoHand[0]);
+                        MyGame.MyDeck.CardsInGame.RemoveAt(endPos);
+                        MyGame.MyDeck.PlayerTwoHand.RemoveAt(0);
+                    }
 
-                    MyGame.MyDeck.PlayerOneHand[0].Position = endPos;
-                    MyGame.MyDeck.CardsInGame.Insert(endPos - 1, MyGame.MyDeck.PlayerOneHand[0]);
-                    MyGame.MyDeck.CardsInGame.RemoveAt(endPos);
-                    MyGame.MyDeck.PlayerOneHand.RemoveAt(0);
-                    var JsonGame = JsonConvert.SerializeObject(MyGame);
-                    await Clients.All.SendAsync("ReceiveGame", JsonGame);
+                    //This is where we call the win event and handle that
+                    //TODO
+                    if (MyGame.MyDeck.PlayerOneHand.Count == 0){
+                        MyGame.IsGameOver = true;
+                        await Clients.All.SendAsync("GameIsOver", $"{MyGame.PlayerOnesName} Wins!");
+                    }
+                    else if(MyGame.MyDeck.PlayerTwoHand.Count == 0){
+                        Console.WriteLine("Player Two wins");
+                        MyGame.IsGameOver = true;
+                        await Clients.All.SendAsync("GameIsOver", $"{MyGame.PlayerTwosName} Wins!");
+                    }
+
+                    
+                        var JsonGame = JsonConvert.SerializeObject(MyGame);
+                        await Clients.All.SendAsync("ReceiveGame", JsonGame);
                 }
             }
         }
@@ -110,13 +143,26 @@ namespace TestWebSocketApplication
         /// <returns></returns>
         public async Task StartGame()
         {
-            MyGame = new Game();
-            MyGame.MyDeck.Deal();
+            try{
+                string testToFail = MyGame.PlayerOnesName;
+
+                if(MyGame.IsGameOver)
+                {
+                    MyGame = new Game();
+                    MyGame.MyDeck.Deal();
+
+                    MyGame.PlayerOnesName = "";
+                    MyGame.PlayerTwosName = "";
+                }
+            }
+            catch(Exception){
+                MyGame = new Game();
+                MyGame.MyDeck.Deal();
+            }
 
             var JsonGame = JsonConvert.SerializeObject(MyGame);
-            var playerAssignment = MyGame.GetPlayerAssignment();
 
-            await Clients.All.SendAsync("ReceiveStartGame", JsonGame, playerAssignment);
+            await Clients.All.SendAsync("ReceiveStartGame", JsonGame);
         }
     }
 }

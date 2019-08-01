@@ -8,6 +8,15 @@ namespace TestWebSocketApplication
         public int PlayerOneScore { get; set; }
 
         [JsonProperty]
+        public string PlayerOnesName { get; set; }
+
+        [JsonProperty]
+        public string PlayerTwosName { get; set; }
+
+        [JsonProperty]
+        public bool IsGameOver { get; set; } = false;
+
+        [JsonProperty]
         public int PlayerTwoScore { get; set; }
 
         // we wanted to move this one to the game class instead of deck. It works either way though...
