@@ -97,6 +97,8 @@ namespace TestWebSocketApplication
                         var JsonGame = JsonConvert.SerializeObject(MyGame);
                         await Clients.All.SendAsync("ReceiveGame", JsonGame);
                 }
+
+                updatePlayableCards();
             }
         }
         
