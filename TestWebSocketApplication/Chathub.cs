@@ -65,7 +65,6 @@ namespace TestWebSocketApplication
                     default:
                         break;
                 }
-                updatePlayableCards();
                 if (ValidateMove(player,endPos))
                 {
                     // Relay information back to clients to the function ReceiveGame in site.js
@@ -101,8 +100,7 @@ namespace TestWebSocketApplication
             }
         }
         
-        
-        private void updatePlayableCards()
+        private Boolean updatePlayableCards()
         {
             foreach (Card card in MyGame.MyDeck.CardsInGame)
             {
@@ -125,6 +123,16 @@ namespace TestWebSocketApplication
                     }
                 }
             }
+
+            // This is set to true if there is at least one match
+            foreach (Card card in MyGame.MyDeck.CardsInGame)
+            {
+                if (card.CanBePlayedOn == true)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         private bool ValidateMove(int player, int endPos)
@@ -158,6 +166,15 @@ namespace TestWebSocketApplication
             catch(Exception){
                 MyGame = new Game();
                 MyGame.MyDeck.Deal();
+            }
+
+            // initial check to see if cards are playable
+            if (!updatePlayableCards())
+            {
+                // there are no more cards left to play. time to reshuffle.
+                
+                
+                Console.WriteLine("Time to reshuffle...");
             }
 
             var JsonGame = JsonConvert.SerializeObject(MyGame);

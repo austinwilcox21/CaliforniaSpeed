@@ -120,5 +120,10 @@ namespace TestWebSocketApplication
                 PlayerTwoHand.RemoveAt(i);
             }
         }
+
+        public int getNumberPlayerOneCards()
+        {
+           return PlayerOneHand.Count;
+        }
     }
 }
