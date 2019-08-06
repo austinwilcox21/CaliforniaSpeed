@@ -98,7 +98,35 @@ namespace TestWebSocketApplication
                         await Clients.All.SendAsync("ReceiveGame", JsonGame);
                 }
 
-                updatePlayableCards();
+                while(!updatePlayableCards())
+                {
+                    if(MyGame.MyDeck.PlayerOneHand.Count < 4)
+                    {
+                        MyGame.IsGameOver = true;
+                        await Clients.All.SendAsync("GameIsOver", $"{MyGame.PlayerOnesName} Wins!");
+                        break;
+                    }
+                    else if(MyGame.MyDeck.PlayerTwoHand.Count < 4)
+                    {
+                        MyGame.IsGameOver = true;
+                        await Clients.All.SendAsync("GameIsOver", $"{MyGame.PlayerTwosName} Wins!");
+                        break;
+                    }
+
+                    for(int i = 0; i < 8; i++)
+                    {
+                        MyGame.MyDeck.CardsInGame.RemoveAt(0);
+                    }
+
+                    //for(int j = 4; j < 8; j++)
+                    //{
+                    //    MyGame.MyDeck.CardsInGame.RemoveAt(j);
+                    //}
+                    MyGame.MyDeck.Deal();
+
+                    var JsonGame = JsonConvert.SerializeObject(MyGame);
+                    await Clients.All.SendAsync("ReceiveGame", JsonGame);
+                }
             }
         }
         
@@ -171,12 +199,37 @@ namespace TestWebSocketApplication
             }
 
             // initial check to see if cards are playable
-            if (!updatePlayableCards())
+            while (!updatePlayableCards())
             {
                 // there are no more cards left to play. time to reshuffle.
-                
-                
+
                 Console.WriteLine("Time to reshuffle...");
+                if (MyGame.MyDeck.PlayerOneHand.Count < 4)
+                {
+                    MyGame.IsGameOver = true;
+                    await Clients.All.SendAsync("GameIsOver", $"{MyGame.PlayerOnesName} Wins!");
+                    break;
+                }
+                else if (MyGame.MyDeck.PlayerTwoHand.Count < 4)
+                {
+                    MyGame.IsGameOver = true;
+                    await Clients.All.SendAsync("GameIsOver", $"{MyGame.PlayerTwosName} Wins!");
+                    break;
+                }
+
+                for (int i = 0; i < 8; i++)
+                {
+                    MyGame.MyDeck.CardsInGame.RemoveAt(0);
+                }
+
+                //for(int j = 4; j < 8; j++)
+                //{
+                //    MyGame.MyDeck.CardsInGame.RemoveAt(j);
+                //}
+                MyGame.MyDeck.Deal();
+
+                var myJsonGame = JsonConvert.SerializeObject(MyGame);
+                await Clients.All.SendAsync("ReceiveStartGame", myJsonGame);
             }
 
             var JsonGame = JsonConvert.SerializeObject(MyGame);
