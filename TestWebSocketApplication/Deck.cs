@@ -14,6 +14,10 @@ namespace TestWebSocketApplication
 
         [JsonProperty]
         public List<Card> CardsInGame { get; set; }
+
+        public List<Card> PlayerOneStack { get; set; }
+        public List<Card> PlayerTwoStack { get; set; }
+
         public const int NUMBER_CARDS = 52;
         public Random randomNum;
 
@@ -22,6 +26,8 @@ namespace TestWebSocketApplication
             PlayerOneHand = new List<Card>();
             PlayerTwoHand = new List<Card>();
             CardsInGame = new List<Card>();
+            PlayerTwoStack = new List<Card>();
+            PlayerOneStack = new List<Card>();
 
             string[] images =
             {

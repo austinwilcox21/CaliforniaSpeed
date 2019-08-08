@@ -2,11 +2,11 @@
   <MonoDevelop.Ide.ItemProperties.TestWebSocketApplication PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="TestWebSocketApplication/Chathub.cs">
     <Files>
-      <File FileName="TestWebSocketApplication/Deck.cs" Line="105" Column="51" />
-      <File FileName="TestWebSocketApplication/Chathub.cs" Line="104" Column="22" />
-      <File FileName="TestWebSocketApplication/Game.cs" Line="1" Column="1" />
-      <File FileName="TestWebSocketApplication/wwwroot/js/site.js" Line="48" Column="1" />
-      <File FileName="TestWebSocketApplication/Card.cs" Line="1" Column="1" />
+      <File FileName="TestWebSocketApplication/Deck.cs" Line="30" Column="47" />
+      <File FileName="TestWebSocketApplication/Chathub.cs" Line="155" Column="58" />
+      <File FileName="TestWebSocketApplication/Game.cs" />
+      <File FileName="TestWebSocketApplication/wwwroot/js/site.js" />
+      <File FileName="TestWebSocketApplication/Card.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,8 +28,7 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/awilcox/Documents/GitHub/Hello World/CaliforniaSpeed/TestWebSocketApplication/obj/TestWebSocketApplication.csproj.nuget.g.props" relfile="TestWebSocketApplication/obj/TestWebSocketApplication.csproj.nuget.g.props" line="6" column="12" />
-      <Breakpoint file="/Users/awilcox/Documents/GitHub/Hello World/CaliforniaSpeed/TestWebSocketApplication/Chathub.cs" relfile="TestWebSocketApplication/Chathub.cs" line="193" column="1" />
-      <Breakpoint file="/Users/awilcox/Documents/GitHub/Hello World/CaliforniaSpeed/TestWebSocketApplication/Chathub.cs" relfile="TestWebSocketApplication/Chathub.cs" line="112" column="1" />
+      <Breakpoint file="/Users/awilcox/Documents/GitHub/Hello World/CaliforniaSpeed/TestWebSocketApplication/Chathub.cs" relfile="TestWebSocketApplication/Chathub.cs" line="109" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

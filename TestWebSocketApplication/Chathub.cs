@@ -67,35 +67,49 @@ namespace TestWebSocketApplication
                 }
                 if (ValidateMove(player,endPos))
                 {
-                    // Relay information back to clients to the function ReceiveGame in site.js
-                    if(player == 1){
-                        MyGame.MyDeck.PlayerOneHand[0].Position = endPos;
-                        MyGame.MyDeck.CardsInGame.Insert(endPos - 1, MyGame.MyDeck.PlayerOneHand[0]);
-                        MyGame.MyDeck.CardsInGame.RemoveAt(endPos);
-                        MyGame.MyDeck.PlayerOneHand.RemoveAt(0);
-                    }
-                    else if(player == 2){
-                        MyGame.MyDeck.PlayerTwoHand[0].Position = endPos;
-                        MyGame.MyDeck.CardsInGame.Insert(endPos - 1, MyGame.MyDeck.PlayerTwoHand[0]);
-                        MyGame.MyDeck.CardsInGame.RemoveAt(endPos);
-                        MyGame.MyDeck.PlayerTwoHand.RemoveAt(0);
-                    }
+                    try
+                    {
+                        if (player == 1)
+                        {
+                            MyGame.MyDeck.PlayerOneHand[0].Position = endPos;
+                            MyGame.MyDeck.CardsInGame.Insert(endPos - 1, MyGame.MyDeck.PlayerOneHand[0]);
+                            MyGame.MyDeck.PlayerOneStack.Add(MyGame.MyDeck.CardsInGame[endPos - 1]);
+                            MyGame.MyDeck.CardsInGame.RemoveAt(endPos);
+                            MyGame.MyDeck.PlayerOneHand.RemoveAt(0);
+                        }
+                        else if (player == 2)
+                        {
+                            MyGame.MyDeck.PlayerTwoHand[0].Position = endPos;
+                            MyGame.MyDeck.CardsInGame.Insert(endPos - 1, MyGame.MyDeck.PlayerTwoHand[0]);
+                            MyGame.MyDeck.PlayerTwoStack.Add(MyGame.MyDeck.CardsInGame[endPos]);
+                            MyGame.MyDeck.CardsInGame.RemoveAt(endPos);
+                            MyGame.MyDeck.PlayerTwoHand.RemoveAt(0);
+                        }
 
-                    //This is where we call the win event and handle that
-                    //TODO
-                    if (MyGame.MyDeck.PlayerOneHand.Count == 0){
-                        MyGame.IsGameOver = true;
-                        await Clients.All.SendAsync("GameIsOver", $"{MyGame.PlayerOnesName} Wins!");
-                    }
-                    else if(MyGame.MyDeck.PlayerTwoHand.Count == 0){
-                        Console.WriteLine("Player Two wins");
-                        MyGame.IsGameOver = true;
-                        await Clients.All.SendAsync("GameIsOver", $"{MyGame.PlayerTwosName} Wins!");
-                    }
+                        //This is where we call the win event and handle that
+                        //TODO
+                        if (MyGame.MyDeck.PlayerOneHand.Count == 0)
+                        {
+                            MyGame.IsGameOver = true;
+                            await Clients.All.SendAsync("GameIsOver", $"{MyGame.PlayerOnesName} Wins!");
+                        }
+                        else if (MyGame.MyDeck.PlayerTwoHand.Count == 0)
+                        {
+                            Console.WriteLine("Player Two wins");
+                            MyGame.IsGameOver = true;
+                            await Clients.All.SendAsync("GameIsOver", $"{MyGame.PlayerTwosName} Wins!");
+                        }
 
-                    
+
                         var JsonGame = JsonConvert.SerializeObject(MyGame);
                         await Clients.All.SendAsync("ReceiveGame", JsonGame);
+                    }
+                    catch(Exception ex)
+                    {
+                        Console.WriteLine("test");
+                    }
+                    // Relay information back to clients to the function ReceiveGame in site.js
+                    
                 }
 
                 while(!updatePlayableCards())
@@ -113,10 +127,32 @@ namespace TestWebSocketApplication
                         break;
                     }
 
+                    for(int i = 0; i < 4; i++)
+                    {
+                        MyGame.MyDeck.PlayerOneStack.Add(MyGame.MyDeck.CardsInGame[i]);
+                    }
+                    for (int i = 4; i < 8; i++)
+                    {
+                        MyGame.MyDeck.PlayerTwoStack.Add(MyGame.MyDeck.CardsInGame[i]);
+                    }
+
                     for(int i = 0; i < 8; i++)
                     {
                         MyGame.MyDeck.CardsInGame.RemoveAt(0);
                     }
+
+                    foreach(var item in MyGame.MyDeck.PlayerOneStack)
+                    {
+                        MyGame.MyDeck.PlayerOneHand.Add(item);
+                    }
+
+                    foreach (var item in MyGame.MyDeck.PlayerTwoStack)
+                    {
+                        MyGame.MyDeck.PlayerTwoHand.Add(item);
+                    }
+
+                    MyGame.MyDeck.PlayerTwoStack.Clear();
+                    MyGame.MyDeck.PlayerOneStack.Clear();
 
                     //for(int j = 4; j < 8; j++)
                     //{
